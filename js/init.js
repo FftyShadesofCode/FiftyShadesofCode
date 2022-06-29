@@ -11,32 +11,32 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	aali_tm_resume_image_width();
-	aali_tm_nav_bg();
-	aali_tm_trigger_menu();
-	aali_tm_hero_image();
-	aali_tm_service_popup();
-	aali_tm_portfolio_popup();
-	aali_tm_news_popup();
-	aali_tm_cursor();
-	aali_tm_imgtosvg();
-	aali_tm_popup();
-	aali_tm_portfolio();
-	aali_tm_data_images();
-	aali_tm_contact_form();
-	aali_tm_jarallax();
-	aali_tm_testimonial_arrow();
-	aali_tm_owl_carousel();
-	aali_tm_about_animation();
-	aali_tm_moving_animation();
-	aali_tm_down();
-	aali_tm_totop();
+	tm_resume_image_width();
+	tm_nav_bg();
+	tm_trigger_menu();
+	tm_hero_image();
+	tm_service_popup();
+	tm_portfolio_popup();
+	tm_news_popup();
+	tm_cursor();
+	tm_imgtosvg();
+	tm_popup();
+	tm_portfolio();
+	tm_data_images();
+	tm_contact_form();
+	tm_jarallax();
+	tm_testimonial_arrow();
+	tm_owl_carousel();
+	tm_about_animation();
+	tm_moving_animation();
+	tm_down();
+	tm_totop();
 	
 	jQuery(window).load('body', function(){
-		aali_tm_my_load();
+		tm_my_load();
 	});
 	jQuery(window).on('resize', function(){
-		aali_tm_resume_image_width();
+		tm_resume_image_width();
 	});
 	
 });
@@ -45,11 +45,11 @@ jQuery(document).ready(function(){
 // ---------------   FUNCTIONS    ----------------------
 // -----------------------------------------------------
 
-function aali_tm_testimonial_arrow(){
+function tm_testimonial_arrow(){
 	
 	"use strict";
 	
-	$('.aali_tm_testimonials .direct a').on('mouseenter',function(){
+	$('.tm_testimonials .direct a').on('mouseenter',function(){
 		var e = $(this);
 		var p = e.closest('.direct');
 		if(e.hasClass('prev_button')){
@@ -70,12 +70,12 @@ function aali_tm_testimonial_arrow(){
 // ------------   RESUME IMAGE WIDTH    ----------------
 // -----------------------------------------------------
 
-function aali_tm_resume_image_width(){
+function tm_resume_image_width(){
 	
 	"use strict";
 	
-	var media			= jQuery('.aali_tm_resume .media');
-	var contentWidth	= jQuery('.aali_tm_resume .resume_in').width();
+	var media			= jQuery('.tm_resume .media');
+	var contentWidth	= jQuery('.tm_resume .resume_in').width();
 	media.css({width: (($(window).width() - contentWidth)/2 + 0.15*contentWidth) +'px'});
 }
 
@@ -83,12 +83,12 @@ function aali_tm_resume_image_width(){
 // -------------   TOPBAR BG SCROLL  ---------------
 // -------------------------------------------------
 
-function aali_tm_nav_bg(){
+function tm_nav_bg(){
 	
 	"use strict";
 	
 	jQuery(window).on('scroll',function(){
-		var menu	 		= jQuery('.aali_tm_header');
+		var menu	 		= jQuery('.tm_header');
 		var WinOffset		= jQuery(window).scrollTop();
 		
 		if(WinOffset >= 100){
@@ -109,13 +109,13 @@ jQuery('.anchor_nav').onePageNav();
 // ---------------   TRIGGER MENU    -------------------
 // -----------------------------------------------------
 
-function aali_tm_trigger_menu(){
+function tm_trigger_menu(){
 	
 	"use strict";
 
-	var hamburger 		= jQuery('.aali_tm_mobile_menu .trigger .hamburger');
-	var mobileMenu		= jQuery('.aali_tm_mobile_menu .dropdown');
-	var mobileMenuList	= jQuery('.aali_tm_mobile_menu .dropdown .dropdown_inner ul li a');
+	var hamburger 		= jQuery('.tm_mobile_menu .trigger .hamburger');
+	var mobileMenu		= jQuery('.tm_mobile_menu .dropdown');
+	var mobileMenuList	= jQuery('.tm_mobile_menu .dropdown .dropdown_inner ul li a');
 
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
@@ -131,7 +131,7 @@ function aali_tm_trigger_menu(){
 	});
 	
 	mobileMenuList.on('click',function(){
-		jQuery('.aali_tm_mobile_menu .trigger .hamburger').removeClass('is-active');
+		jQuery('.tm_mobile_menu .trigger .hamburger').removeClass('is-active');
 		mobileMenu.slideUp();
 		return false;
 	});
@@ -141,21 +141,21 @@ function aali_tm_trigger_menu(){
 // ---------------   HERO IMAGE  -----------------------
 // -----------------------------------------------------
 
-function aali_tm_hero_image(){
+function tm_hero_image(){
 	
 	"use strict";
 	
-	var FixedImage	= jQuery('.aali_tm_hero .right .image .main').data('img-url');
-	var wrapper	= jQuery('.aali_tm_hero .services ul');
+	var FixedImage	= jQuery('.tm_hero .right .image .main').data('img-url');
+	var wrapper	= jQuery('.tm_hero .services ul');
 	var list	= wrapper.find('li a');
 	list.on('mouseenter',function(){
 		var element = jQuery(this);
 		var image	= element.find('.image').attr('src');
-		element.closest('.aali_tm_hero').find('.right .image .main').css({backgroundImage:'url('+image+')'});
+		element.closest('.tm_hero').find('.right .image .main').css({backgroundImage:'url('+image+')'});
 		console.log(image);
 	});
 	wrapper.on('mouseleave',function(){
-		jQuery('.aali_tm_hero .right .image .main').css({backgroundImage:'url('+FixedImage+')'});
+		jQuery('.tm_hero .right .image .main').css({backgroundImage:'url('+FixedImage+')'});
 	});
 }
 
@@ -163,24 +163,24 @@ function aali_tm_hero_image(){
 // -------------  SERVICE POPUP  -------------------
 // -------------------------------------------------
 
-function aali_tm_service_popup(){
+function tm_service_popup(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.aali_tm_modalbox');
-	var button			= jQuery('.aali_tm_service .service_list ul li .aali_tm_full_link');
+	var modalBox		= jQuery('.tm_modalbox');
+	var button			= jQuery('.tm_service .service_list ul li .tm_full_link');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
 		var element = jQuery(this);
-		var parent	= element.closest('.aali_tm_service .service_list ul li');
+		var parent	= element.closest('.tm_service .service_list ul li');
 		var elImage	= parent.find('.popup_service_image').attr('src');
 		var title	= parent.find('.title').html();
 		var content = parent.find('.service_hidden_details').html();
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.service_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
-		aali_tm_data_images();
+		tm_data_images();
 		modalBox.find('.service_popup_informations .image').after('<div class="main_title">'+title+'</div>');
 		return false;
 	});
@@ -195,12 +195,12 @@ function aali_tm_service_popup(){
 // -----------  PORTFOLIO POPUP  -------------------
 // -------------------------------------------------
 
-function aali_tm_portfolio_popup(){
+function tm_portfolio_popup(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.aali_tm_modalbox');
-	var button			= jQuery('.aali_tm_portfolio .portfolio_popup');
+	var modalBox		= jQuery('.tm_modalbox');
+	var button			= jQuery('.tm_portfolio .portfolio_popup');
 	var closePopup		= modalBox.find('.close');
 	
 	button.off().on('click',function(){
@@ -213,7 +213,7 @@ function aali_tm_portfolio_popup(){
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title">'+details+'<div>');
-		aali_tm_data_images();
+		tm_data_images();
 		return false;
 	});
 	closePopup.on('click',function(){
@@ -227,12 +227,12 @@ function aali_tm_portfolio_popup(){
 // ----------------  NEWS POPUP  -------------------
 // -------------------------------------------------
 
-function aali_tm_news_popup(){
+function tm_news_popup(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.aali_tm_modalbox');
-	var button			= jQuery('.aali_tm_news .list_inner .aali_tm_full_link,.aali_tm_news .news_list ul li .details .title a,.aali_tm_news .aali_tm_learn_more a');
+	var modalBox		= jQuery('.tm_modalbox');
+	var button			= jQuery('.tm_news .list_inner .tm_full_link,.tm_news .news_list ul li .details .title a,.tm_news .tm_learn_more a');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
@@ -245,7 +245,7 @@ function aali_tm_news_popup(){
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.news_popup_informations .image').after('<div class="details">'+details+'<div>');
-		aali_tm_data_images();
+		tm_data_images();
 		return false;
 	});
 	closePopup.on('click',function(){
@@ -286,7 +286,7 @@ jQuery('.dodo_progress').each(function() {
 // ---------------   PRELOADER   -----------------------
 // -----------------------------------------------------
 
-function aali_tm_preloader(){
+function tm_preloader(){
 	
 	"use strict";
 	
@@ -310,19 +310,19 @@ function aali_tm_preloader(){
 // -----------------   MY LOAD    ----------------------
 // -----------------------------------------------------
 
-function aali_tm_my_load(){
+function tm_my_load(){
 	
 	"use strict";
 	
 	var speed	= 500;
-	setTimeout(function(){aali_tm_preloader();},speed);
+	setTimeout(function(){tm_preloader();},speed);
 }
 
 // -----------------------------------------------------
 // ------------------   CURSOR    ----------------------
 // -----------------------------------------------------
 
-function aali_tm_cursor(){
+function tm_cursor(){
 	
     "use strict";
 	
@@ -336,9 +336,9 @@ function aali_tm_cursor(){
             o = !1;
         window.onmousemove = function (s) {
             o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-        }, $("body").on("mouseenter", "a,.aali_tm_topbar .trigger, .cursor-pointer", function () {
+        }, $("body").on("mouseenter", "a,.tm_topbar .trigger, .cursor-pointer", function () {
             e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-        }), $("body").on("mouseleave", "a,.aali_tm_topbar .trigger, .cursor-pointer", function () {
+        }), $("body").on("mouseleave", "a,.tm_topbar .trigger, .cursor-pointer", function () {
             $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
         }), e.style.visibility = "visible", t.style.visibility = "visible"
     }
@@ -349,7 +349,7 @@ function aali_tm_cursor(){
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function aali_tm_imgtosvg(){
+function tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -383,7 +383,7 @@ function aali_tm_imgtosvg(){
 // --------------------   POPUP    ---------------------
 // -----------------------------------------------------
 
-function aali_tm_popup(){
+function tm_popup(){
 	
 	"use strict";
 
@@ -422,21 +422,21 @@ function aali_tm_popup(){
 // -----------------    PORTFOLIO    ---------------
 // -------------------------------------------------
 
-function aali_tm_portfolio(){
+function tm_portfolio(){
 
 	"use strict";
 	
 	if(jQuery().isotope) {
 
 		// Needed variables
-		var filter		 = jQuery('.aali_tm_portfolio .portfolio_filter ul');
+		var filter		 = jQuery('.tm_portfolio .portfolio_filter ul');
 
 		if(filter.length){
 			// Isotope Filter 
 			filter.find('a').on('click', function(){
 				var element		= jQuery(this);
 				var selector 	= element.attr('data-filter');
-				var list		= element.closest('.aali_tm_portfolio').find('.portfolio_list').children('ul');
+				var list		= element.closest('.tm_portfolio').find('.portfolio_list').children('ul');
 				list.isotope({ 
 					filter				: selector,
 					animationOptions	: {
@@ -458,7 +458,7 @@ function aali_tm_portfolio(){
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
 
-function aali_tm_data_images(){
+function tm_data_images(){
 	
 	"use strict";
 	
@@ -475,7 +475,7 @@ function aali_tm_data_images(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function aali_tm_contact_form(){
+function tm_contact_form(){
 	
 	"use strict";
 	
@@ -521,7 +521,7 @@ function aali_tm_contact_form(){
 // --------------------    JARALLAX    -----------------
 // -----------------------------------------------------
 
-function aali_tm_jarallax(){
+function tm_jarallax(){
 	
 	"use strict";
 	
@@ -553,11 +553,11 @@ function aali_tm_jarallax(){
 // ----------------    OWL CAROUSEL    -----------------
 // -----------------------------------------------------
 
-function aali_tm_owl_carousel(){
+function tm_owl_carousel(){
 
 	"use strict";
 	
-	var carousel			= jQuery('.aali_tm_testimonials .owl-carousel');
+	var carousel			= jQuery('.tm_testimonials .owl-carousel');
 	
 	var rtlMode	= false;
 
@@ -602,7 +602,7 @@ function aali_tm_owl_carousel(){
 		return false;
 	});
 
-	aali_tm_imgtosvg();
+	tm_imgtosvg();
 }
 
 // -----------------------------------------------------
@@ -633,7 +633,7 @@ jQuery('.tm_counter').each(function() {
 // -------------    PARALLAX ANIMATION    --------------
 // -----------------------------------------------------
 
-function aali_tm_about_animation(){
+function tm_about_animation(){
 
 	"use strict";
 
@@ -651,7 +651,7 @@ function aali_tm_about_animation(){
 // -------------    MOVING ANIMATION    ----------------
 // -----------------------------------------------------
 
-function aali_tm_moving_animation(){
+function tm_moving_animation(){
 	
 	"use strict";
 	
@@ -695,11 +695,11 @@ jQuery('.tilt-effect').tilt({
 // -----------------    DOWN    ------------------------
 // -----------------------------------------------------
 
-function aali_tm_down(){
+function tm_down(){
 	
 	"use strict";
 	
-	var topbar	= jQuery('.aali_tm_header').outerHeight();
+	var topbar	= jQuery('.tm_header').outerHeight();
 	
 	jQuery('.anchor').on('click',function(){
 		
@@ -717,7 +717,7 @@ function aali_tm_down(){
 /********** TOTOP ***********/ 
 /****************************/ 
 
-function aali_tm_totop(){
+function tm_totop(){
   
   "use strict";
   

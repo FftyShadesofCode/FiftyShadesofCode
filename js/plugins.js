@@ -1,10 +1,3 @@
-/*
- * Copyright (c) 2021 Marketify
- * Author: Marketify
- * This file is made for CURRENT TEMPLATE
-*/
-
-
 /*------------------------------------------------------------------*/
 /*  NAV ANCHOR(ONE PAGE NAV PLUGIN)
 /*------------------------------------------------------------------*/
@@ -211,9 +204,9 @@
 
 		scrollTo: function(target, callback) {
 			var offset 		= $(target).offset().top;
-			var topbar		= jQuery('.aali_tm_header').outerHeight();
+			var topbar		= jQuery('.tm_header').outerHeight();
 			
-			if(jQuery('.aali_tm_header').length){
+			if(jQuery('.tm_header').length){
 				$('html, body').animate({
 				scrollTop: offset-topbar+18
 			}, this.config.scrollSpeed, this.config.easing, callback);
