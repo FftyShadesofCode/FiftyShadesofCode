@@ -1,30 +1,30 @@
 @charset "utf-8";
 
 /*
-/*	Copyright (c) 2021 Marketify
-/*	Author: Marketify
-/*	This file is made for CURRENT TEMPLATE
+/*
+/*
+/*
 
-01)	AALI BASE
-02)	AALI MOBILE MENU
-03) AALI HEADER
-04) AALI HERO
-05) AALI ABOUT
-06) AALI SKILLS
-07) AALI PORTFOLIO
-08) AALI SERVICES
-09) AALI RESUME
-10) AALI TESTIMONIALS
-11) AALI NEWS
-12) AALI COUNTER
-13) AALI CONTACT
-14) AALI COPYRIGHT
-15) AALI CURSOR
-16) AALI MEDIA QUERIES (FOR SMALL DEVIVES)
+01)	BASE
+02)	MOBILE MENU
+03) HEADER
+04) HERO
+05) ABOUT
+06) SKILLS
+07) PORTFOLIO
+08) SERVICES
+09) RESUME
+10) TESTIMONIALS
+11) NEWS
+12) COUNTER
+13) CONTACT
+14) COPYRIGHT
+15) CURSOR
+16) MEDIA QUERIES (FOR SMALL DEVICES)
 
 
 /*---------------------------------------------------*/
-/*	01) AALI BASE
+/*	01) BASE
 /*---------------------------------------------------*/
 
 html {
@@ -140,20 +140,20 @@ h4 { font-size: 24px; }
 h5 { font-size: 20px; }
 h6 { font-size: 16px; }
 
-.aali_tm_all_wrap{
+.tm_all_wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	position: relative;
 }
-.aali_tm_all_wrap,
-.aali_tm_all_wrap *{
+.tm_all_wrap,
+.tm_all_wrap *{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aali_tm_section{
+.tm_section{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -278,10 +278,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	02) AALI MOBILE MENU
+/*	02) MOBILE MENU
 /*---------------------------------------------------*/
 
-.aali_tm_mobile_menu{
+.tm_mobile_menu{
 	width: 100%;
 	height: auto;
 	position: fixed;
@@ -290,7 +290,7 @@ h6 { font-size: 16px; }
 	display: none;
 	z-index: 10;
 }
-.aali_tm_mobile_menu .mobile_menu_inner{
+.tm_mobile_menu .mobile_menu_inner{
 	width: 100%;
 	height: auto;
 	float: left;
@@ -299,7 +299,7 @@ h6 { font-size: 16px; }
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	padding: 15px 20px 15px 20px;
 }
-.aali_tm_mobile_menu .mobile_in{
+.tm_mobile_menu .mobile_in{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -308,16 +308,16 @@ h6 { font-size: 16px; }
 	align-items: center;
 	justify-content: space-between;
 }
-.aali_tm_mobile_menu .mobile_in .logo img{
+.tm_mobile_menu .mobile_in .logo img{
 	max-width: 70px;
 	max-height: 50px;
 }
-.aali_tm_mobile_menu .trigger{
+.tm_mobile_menu .trigger{
 	line-height: 0;
 	position: relative;
 	top: 3px;
 }
-.aali_tm_mobile_menu .dropdown{
+.tm_mobile_menu .dropdown{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -325,23 +325,23 @@ h6 { font-size: 16px; }
 	background-color: #fff;
 	display: none;
 }
-.aali_tm_mobile_menu .dropdown .dropdown_inner{
+.tm_mobile_menu .dropdown .dropdown_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding: 25px 40px;
 }
-.aali_tm_mobile_menu .dropdown .dropdown_inner ul{
+.tm_mobile_menu .dropdown .dropdown_inner ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_mobile_menu .dropdown .dropdown_inner ul li{
+.tm_mobile_menu .dropdown .dropdown_inner ul li{
 	margin: 0px;
 	float: left;
 	width: 100%;
 }
-.aali_tm_mobile_menu .dropdown .dropdown_inner ul li a{
+.tm_mobile_menu .dropdown .dropdown_inner ul li a{
 	text-decoration: none;
 	color: #000;
 	display: inline-block;
@@ -349,7 +349,7 @@ h6 { font-size: 16px; }
 	font-family: "Josefin Sans";
 	font-weight: 600;
 }
-.aali_tm_mobile_menu .hamburger{
+.tm_mobile_menu .hamburger{
 	padding: 0px !important;
 }
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
@@ -361,10 +361,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	03) AALI HEADER
+/*	03) HEADER
 /*---------------------------------------------------*/
 
-.aali_tm_header{
+.tm_header{
 	position: fixed;
 	z-index: 10;
 	top: 0px;
@@ -377,7 +377,7 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_header .inner{
+.tm_header .inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -393,31 +393,31 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_header.animate{
+.tm_header.animate{
 	background-color: #fff;
 }
-.aali_tm_header.animate .inner{
+.tm_header.animate .inner{
 	padding: 22px 0px;
 }
-.aali_tm_header .logo img{
+.tm_header .logo img{
 	max-width: 175px;
 }
-.aali_tm_header .logo .light{display: block;}
-.aali_tm_header .logo .dark{display: none;}
-.aali_tm_header.animate .logo .light{display: none;}
-.aali_tm_header.animate .logo .dark{display: block;}
-.aali_tm_header .menu ul{
+.tm_header .logo .light{display: block;}
+.tm_header .logo .dark{display: none;}
+.tm_header.animate .logo .light{display: none;}
+.tm_header.animate .logo .dark{display: block;}
+.tm_header .menu ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_header .menu ul li{
+.tm_header .menu ul li{
 	margin: 0px 45px 0px 0px;
 	display: inline-block;
 }
-.aali_tm_header .menu ul li:last-child{
+.tm_header .menu ul li:last-child{
 	margin-right: 0px;
 }
-.aali_tm_header .menu ul li a{
+.tm_header .menu ul li a{
 	text-decoration: none;
 	color: #fff;
 	font-family: "Josefin Sans";
@@ -429,27 +429,27 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_header .menu ul li a:hover{
+.tm_header .menu ul li a:hover{
 	color: #ea4343;
 }
-.aali_tm_header .menu ul li.current a{
+.tm_header .menu ul li.current a{
 	color: #ea4343;
 }
-.aali_tm_header.animate .menu ul li.current a{
+.tm_header.animate .menu ul li.current a{
 	color: #ea4343;
 }
-.aali_tm_header.animate .menu ul li a{
+.tm_header.animate .menu ul li a{
 	color: #15111e;
 }
-.aali_tm_header.animate .menu ul li a:hover{
+.tm_header.animate .menu ul li a:hover{
 	color: #ea4343;
 }
 
 /*---------------------------------------------------*/
-/*	04) AALI HERO
+/*	04) HERO
 /*---------------------------------------------------*/
 
-.aali_tm_hero{
+.tm_hero{
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -458,20 +458,20 @@ h6 { font-size: 16px; }
 	background-color: #3c3c3c;
 	overflow: hidden;
 }
-.aali_tm_hero .hero_inner{
+.tm_hero .hero_inner{
 	width: 100%;
 	height: 100vh;
 	position: relative;
 	float: left;
 }
-.aali_tm_hero .content{
+.tm_hero .content{
 	position: absolute;
 	width: 50%;
 	top: 50%;
 	transform: translateY(-50%);
 	left: auto;
 }
-.aali_tm_hero .content .hello{
+.tm_hero .content .hello{
 	font-family: "Josefin Sans";
 	font-size: 25px;
 	font-weight: 700;
@@ -480,30 +480,30 @@ h6 { font-size: 16px; }
 	margin-bottom: 15px;
 	display: inline-block;
 }
-.aali_tm_hero .content .name{
+.tm_hero .content .name{
 	font-size: 85px;
 	font-weight: 700;
 	color: #ea4343;
 	letter-spacing: -.2px;
 	line-height: 1.1;
 }
-.aali_tm_hero .content .job{
+.tm_hero .content .job{
 	overflow: hidden;
 }
-.aali_tm_hero .cd-headline{
+.tm_hero .cd-headline{
 	font-size: 40px;
 	font-weight: 700;
 	color: #fff;
 	letter-spacing: -.2px;
 	font-family: "Josefin Sans";
 }
-.aali_tm_hero .cd-headline b{
+.tm_hero .cd-headline b{
 	font-size: 75px;
 }
-.aali_tm_hero .content .second span{
+.tm_hero .content .second span{
 	font-size: 75px;
 }
-.aali_tm_hero .hero_buttons{
+.tm_hero .hero_buttons{
 	width: 100%;
 	float: left;
 	display: flex;
@@ -511,23 +511,23 @@ h6 { font-size: 16px; }
 	margin-top: 35px;
 	margin-bottom: 55px;
 }
-.aali_tm_button{
+.tm_button{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_hero .aali_tm_button{
+.tm_hero .tm_button{
 	width: auto;
 }
-.aali_tm_button.border a{
+.tm_button.border a{
 	background-color: transparent;
 	color: #15111e;
 }
-.aali_tm_button.border .svg{
+.tm_button.border .svg{
 	color: #ea4343;
 }
-.aali_tm_button a{
+.tm_button a{
 	text-decoration: none;
 	color: #fff;
 	font-family: "Josefin Sans";
@@ -546,27 +546,27 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_button a:hover{
+.tm_button a:hover{
 	background-color: transparent;
 	color: #15111e;
 }
-.aali_tm_button a:hover .svg{
+.tm_button a:hover .svg{
 	color: #15111e;
 }
-.aali_tm_hero .aali_tm_button a:hover .svg{
+.tm_hero .tm_button a:hover .svg{
 	color: #fff;
 }
-.aali_tm_hero .aali_tm_button a:hover{
+.tm_hero .tm_button a:hover{
 	color: #fff;
 }
-.aali_tm_button.border a:hover{
+.tm_button.border a:hover{
 	background-color: #ea4343;
 	color: #fff;
 }
-.aali_tm_button.border a:hover .svg{
+.tm_button.border a:hover .svg{
 	color: #fff;
 }
-.aali_tm_button a .svg{
+.tm_button a .svg{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -582,21 +582,21 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_button span{
+.tm_button span{
 	position: relative;
 	display: inline-block;
 }
-.aali_tm_hero .simple_button{
+.tm_hero .simple_button{
 	margin-left: 36px;
 }
-.aali_tm_hero .simple_button a{
+.tm_hero .simple_button a{
 	text-decoration: none;
 	color: #fff;
 	font-family: "Josefin Sans";
 	font-weight: 700;
 	white-space: nowrap;
 }
-.aali_tm_hero .simple_button a{
+.tm_hero .simple_button a{
 	display: inline-block;
 	position: relative;
 	
@@ -606,7 +606,7 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_hero .simple_button a:after{
+.tm_hero .simple_button a:after{
 	content: '';
     width: 0;
     height: 1px;
@@ -617,16 +617,16 @@ h6 { font-size: 16px; }
     transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
     background: currentColor;
 }
-.aali_tm_hero .simple_button a:hover:after{
+.tm_hero .simple_button a:hover:after{
 	width:100%;
 	left:0;
 	right:auto;
 }
-.aali_tm_down svg{
+.tm_down svg{
 	width: 35px !important;
 	height: 35px !important;
 }
-.aali_tm_down svg #wheel{
+.tm_down svg #wheel{
 	animation: scroll ease 2s infinite;
 }
 @keyframes scroll {
@@ -637,7 +637,7 @@ h6 { font-size: 16px; }
         transform: translateY(60px);
     }
 }
-.aali_tm_hero .avatar{
+.tm_hero .avatar{
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -645,13 +645,13 @@ h6 { font-size: 16px; }
 	width: 45%;
 	z-index: 1;
 }
-.aali_tm_hero .avatar .main{
+.tm_hero .avatar .main{
 	position: absolute;
 	right: 75px;
 	bottom: 200px;
 	width: 100%;
 }
-.aali_tm_hero .avatar .one{
+.tm_hero .avatar .one{
 	position: absolute;
 	top: 150px;
 	bottom: 150px;
@@ -659,13 +659,13 @@ h6 { font-size: 16px; }
 	width: 380px;
 	z-index: -4;
 }
-.aali_tm_hero .avatar .one .in{
+.tm_hero .avatar .one .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: #ea4343;
 }
-.aali_tm_hero .avatar .two{
+.tm_hero .avatar .two{
 	position: absolute;
 	bottom: 80px;
 	left: -50px;
@@ -673,13 +673,13 @@ h6 { font-size: 16px; }
 	height: 180px;
 	z-index: 2;
 }
-.aali_tm_hero .avatar .two .in{
+.tm_hero .avatar .two .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: #ea4343;
 }
-.aali_tm_hero .avatar .three{
+.tm_hero .avatar .three{
 	position: absolute;
 	top: 235px;
 	left: -110px;
@@ -687,13 +687,13 @@ h6 { font-size: 16px; }
 	height: 110px;
 	z-index: 2;
 }
-.aali_tm_hero .avatar .three .in{
+.tm_hero .avatar .three .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: #ea4343;
 }
-.aali_tm_hero .avatar .four{
+.tm_hero .avatar .four{
 	position: absolute;
 	width: 440px;
 	height: 470px;
@@ -702,13 +702,13 @@ h6 { font-size: 16px; }
 	right: 20px;
 	z-index: -1;
 }
-.aali_tm_hero .avatar .four .in{
+.tm_hero .avatar .four .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	border: 5px solid #fff;
 }
-.aali_tm_hero .stroke_text{
+.tm_hero .stroke_text{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -716,7 +716,7 @@ h6 { font-size: 16px; }
 	z-index: -2;
 	margin-top: -70px;
 }
-.aali_tm_hero .stroke_text span{
+.tm_hero .stroke_text span{
 	font-size: 260px;
 	color: transparent;
 	-webkit-text-stroke: 3px rgba(255,255,255,.3);
@@ -724,40 +724,40 @@ h6 { font-size: 16px; }
 	font-family: "Montserrat";
 	font-weight: 700;
 }
-.aali_tm_hero .five{
+.tm_hero .five{
 	position: absolute;
 	width: 50px;
 	height: 70px;
 	bottom: 32%;
 	right: -180px;
 }
-.aali_tm_hero .five .in{
+.tm_hero .five .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: #ea4343;
 }
-.aali_tm_hero .socials{
+.tm_hero .socials{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 50px;
 }
-.aali_tm_hero .socials ul{
+.tm_hero .socials ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_hero .socials ul li{
+.tm_hero .socials ul li{
 	margin: 0px 0px 15px 0px;
 }
-.aali_tm_hero .socials ul li:last-child{
+.tm_hero .socials ul li:last-child{
 	margin-bottom: 0px;
 }
-.aali_tm_hero .socials ul .svg{
+.tm_hero .socials ul .svg{
 	width: 22px;
 	height: 22px;
 }
-.aali_tm_hero .socials ul a{
+.tm_hero .socials ul a{
 	text-decoration: none;
 	color: #fff;
 	
@@ -767,50 +767,50 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_hero .socials ul a:hover{
+.tm_hero .socials ul a:hover{
 	color: #ea4343;
 }
-.aali_tm_hero .hero_mail{
+.tm_hero .hero_mail{
 	position: absolute;
 	bottom: 40px;
 	left: 50px;
 }
-.aali_tm_hero .hero_mail a{
+.tm_hero .hero_mail a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 21px;
 }
 
 /*---------------------------------------------------*/
-/*	05) AALI ABOUT
+/*	05) ABOUT
 /*---------------------------------------------------*/
 
-.aali_tm_about{
+.tm_about{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding: 170px 0px 170px 0px;
 }
-.aali_tm_about .about_inner{
+.tm_about .about_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	display: flex;
 }
-.aali_tm_about .left{
+.tm_about .left{
 	width: 31%;
 }
-.aali_tm_about .left .image{
+.tm_about .left .image{
 	position: relative;
 	margin-left: 160px;
 }
-.aali_tm_about .left .image img{
+.tm_about .left .image img{
 	position: relative;
 	min-width: 100%;
 	opacity: 0;
 }
-.aali_tm_about .left .image .main{
+.tm_about .left .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -822,7 +822,7 @@ h6 { font-size: 16px; }
 	border-radius: 10px;
 	z-index: 1;
 }
-.aali_tm_about .square{
+.tm_about .square{
 	position: absolute;
 	width: 270px;
 	height: 270px;
@@ -831,7 +831,7 @@ h6 { font-size: 16px; }
 	left: -65px;
 	z-index: 0;
 }
-.aali_tm_about .border{
+.tm_about .border{
 	position: absolute;
 	width: 1000px;
 	height: 300px;
@@ -841,22 +841,22 @@ h6 { font-size: 16px; }
 	margin-right: -50px;
 	z-index: 2;
 }
-.aali_tm_about .border .in{
+.tm_about .border .in{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	border: 6px solid #fff;
 }
-.aali_tm_about .center{
+.tm_about .center{
 	width: 44%;
 	padding: 0px 100px 0px 140px;
 }
-.aali_tm_about .center .title{
+.tm_about .center .title{
 	width: 100%;
 	float: left;
 	margin-bottom: 34px;
 }
-.aali_tm_about .center .small{
+.tm_about .center .small{
 	font-family: "Josefin Sans";
 	font-size: 24px;
 	font-weight: 700;
@@ -865,15 +865,15 @@ h6 { font-size: 16px; }
 	display: inline-block;
 	margin-bottom: 6px;
 }
-.aali_tm_about .center h3{
-	font-size: 72px;
+.tm_about .center h3{
+	font-size: 65px;
 	font-weight: 700;
 	letter-spacing: -.2px;
 }
-.aali_tm_about .center h3 span{
+.tm_about .center h3 span{
 	color: #ea4343;
 }
-.aali_tm_about .center .subtitle{
+.tm_about .center .subtitle{
 	font-family: "Josefin Sans";
 	font-size: 36px;
 	font-weight: 700;
@@ -882,15 +882,15 @@ h6 { font-size: 16px; }
 	display: inline-block;
 	margin-top: 18px;
 }
-.aali_tm_about .text{
+.tm_about .text{
 	width: 100%;
 	float: left;
 	margin-bottom: 12px;
 }
-.aali_tm_about .text p{
+.tm_about .text p{
 	margin-bottom: 31px;
 }
-.aali_tm_about .right{
+.tm_about .right{
 	width: 25%;
 	position: relative;
 	top: 290px;
@@ -899,16 +899,16 @@ h6 { font-size: 16px; }
     justify-content: flex-end;
 	z-index: 2;
 }
-.aali_tm_about .right .image{
+.tm_about .right .image{
 	position: relative;
 	margin-right: 70px;
 }
-.aali_tm_about .right .image img{
+.tm_about .right .image img{
 	position: relative;
 	min-width: 100%;
 	opacity: 0;
 }
-.aali_tm_about .right .main{
+.tm_about .right .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -920,7 +920,7 @@ h6 { font-size: 16px; }
 	border-radius: 10px;
 	z-index: 1;
 }
-.aali_tm_about .right .square{
+.tm_about .right .square{
 	width: 1000px;
 	height: 390px;
 	background-color: #ea4343;
@@ -931,10 +931,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	06) AALI SKILLS
+/*	06) SKILLS
 /*---------------------------------------------------*/
 
-.aali_tm_skills{
+.tm_skills{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -943,16 +943,16 @@ h6 { font-size: 16px; }
 	padding: 160px 0px 557px 0px;
 	position: relative;
 }
-.aali_tm_skills .skills_inner{
+.tm_skills .skills_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
-.aali_tm_skills .border{
+.tm_skills .border{
 	position: absolute;
 	width: 1000px;
 	height: 420px;
@@ -961,32 +961,32 @@ h6 { font-size: 16px; }
 	right: 100%;
 	margin-right: -350px;
 }
-.aali_tm_skills .left{
+.tm_skills .left{
 	width: 50%;
 	padding-right: 63px;
 }
-.aali_tm_main_title{
+.tm_main_title{
 	width: 100%;
 	max-width: 620px;
 	clear: both;
 }
-.aali_tm_main_title[data-text-align="left"]{
+.tm_main_title[data-text-align="left"]{
 	text-align: left;
 }
-.aali_tm_main_title[data-text-align="center"]{
+.tm_main_title[data-text-align="center"]{
 	text-align: center;
 	margin: 0px auto;
 }
-.aali_tm_main_title[data-text-align="right"]{
+.tm_main_title[data-text-align="right"]{
 	text-align: right;
 	float: right;
 }
-.aali_tm_main_title[data-color="light"] span,
-.aali_tm_main_title[data-color="light"] h3,
-.aali_tm_main_title[data-color="light"] p{
+.tm_main_title[data-color="light"] span,
+.tm_main_title[data-color="light"] h3,
+.tm_main_title[data-color="light"] p{
 	color: #fff !important;
 }
-.aali_tm_main_title span{
+.tm_main_title span{
 	font-size: 24px;
 	font-family: "Josefin Sans";
 	color: #ea4343;
@@ -995,17 +995,17 @@ h6 { font-size: 16px; }
 	display: inline-block;
 	margin-bottom: 5px;
 }
-.aali_tm_main_title h3{
+.tm_main_title h3{
 	font-size: 60px;
 	font-weight: 700;
 	letter-spacing: -.2px;
 	line-height: 1.3;
 }
-.aali_tm_main_title p{
+.tm_main_title p{
 	margin-top: 32px;
 }
-.aali_tm_skills .right{
-	width: 50%;
+.tm_skills .right{
+	width: 65%;
 	padding-left: 63px;
 	position: relative;
 	top: -8px;
@@ -1014,11 +1014,24 @@ h6 { font-size: 16px; }
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 2rem;
+	text-align: center;
+	width:100%;
 }
 .progress_inner{
-	width:100%;
-	margin-bottom:27px;
+	color: black;
+	background-color: #e8e6e6;
+	box-shadow: 2px 2px 5px 2px #494b4f,
+	2px 2px 10px 5px #2f011d;
+	padding: 2rem 0 1rem 0;
+	transition: all 500ms ease-in-out;
+}
+.progress_inner:hover{
+	background-color: #d1d1d1;
+	transform: scale(1.1);
+	transition: all 500ms ease-in-out;
 }
 .progress_inner:last-child{
 	margin-bottom: 0px;
@@ -1070,10 +1083,10 @@ h6 { font-size: 16px; }
 @keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
 
 /*---------------------------------------------------*/
-/*	07) AALI PORTFOLIO
+/*	07) PORTFOLIO
 /*---------------------------------------------------*/
 
-.aali_tm_portfolio{
+.tm_portfolio{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1083,7 +1096,7 @@ h6 { font-size: 16px; }
 	margin-top: -500px;
 	padding-top: 100px;
 }
-.aali_tm_portfolio .portfolio_filter{
+.tm_portfolio .portfolio_filter{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1091,18 +1104,18 @@ h6 { font-size: 16px; }
 	text-align: center;
 	padding: 78px 0px 55px 0px;
 }
-.aali_tm_portfolio .portfolio_filter ul{
+.tm_portfolio .portfolio_filter ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_portfolio .portfolio_filter ul li{
+.tm_portfolio .portfolio_filter ul li{
 	margin: 0px 45px 0px 0px;
 	display: inline-block;
 }
-.aali_tm_portfolio .portfolio_filter ul li:last-child{
+.tm_portfolio .portfolio_filter ul li:last-child{
 	margin-right: 0px;
 }
-.aali_tm_portfolio .portfolio_filter ul li a{
+.tm_portfolio .portfolio_filter ul li a{
 	text-decoration: none;
 	color: #fff;
 	font-weight: 700;
@@ -1114,38 +1127,38 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_portfolio .portfolio_list{
+.tm_portfolio .portfolio_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_portfolio .portfolio_list ul{
+.tm_portfolio .portfolio_list ul{
 	margin: 0px 0px 0px -25px;
 	list-style-type: none;
 }
-.aali_tm_portfolio .portfolio_list ul li{
+.tm_portfolio .portfolio_list ul li{
 	margin: 0px 0px 25px 0px;
 	width: 33.3333%;
 	float: left;
 	padding-left: 25px;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner{
+.tm_portfolio .portfolio_list ul li .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	position: relative;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner .image{
+.tm_portfolio .portfolio_list ul li .list_inner .image{
 	position: relative;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner .image img{
+.tm_portfolio .portfolio_list ul li .list_inner .image img{
 	position: relative;
 	min-width: 100%;
 	opacity: 0;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner .image .main{
+.tm_portfolio .portfolio_list ul li .list_inner .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1156,7 +1169,7 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	border-radius: 10px;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner .overlay{
+.tm_portfolio .portfolio_list ul li .list_inner .overlay{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1174,20 +1187,21 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner:hover .overlay{
+.tm_portfolio .portfolio_list ul li .list_inner:hover .overlay{
 	opacity: 1;
 	visibility: visible;
 }
-.aali_tm_portfolio .portfolio_list .svg{
+.tm_portfolio .portfolio_list .svg{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 2;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	color: #fff;
 	margin-top:10px;
+	margin-bottom: 5rem;
 	opacity: 0;
 	visibility: hidden;
 	
@@ -1197,12 +1211,13 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner:hover .svg{
+.tm_portfolio .portfolio_list ul li .list_inner:hover .svg{
 	opacity: 1;
 	visibility: visible;
 	margin-top: 0px;
+	margin-bottom: 5rem;
 }
-.aali_tm_portfolio .portfolio_list .details{
+.tm_portfolio .portfolio_list .details{
 	width: 100%;
 	text-align: center;
 	position: absolute;
@@ -1219,23 +1234,23 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_portfolio .portfolio_list ul li .list_inner:hover .details{
+.tm_portfolio .portfolio_list ul li .list_inner:hover .details{
 	opacity: 1;
 	visibility: visible;
 	bottom: 0px;
 }
-.aali_tm_portfolio .portfolio_list .details span{
+.tm_portfolio .portfolio_list .details span{
 	font-size: 16px;
 	color: #fff;
 	display: inline-block;
 	margin-bottom: 10px;
 }
-.aali_tm_portfolio .portfolio_list .details h3{
+.tm_portfolio .portfolio_list .details h3{
 	font-size: 21px;
 	color: #fff;
 	font-weight: 700;
 }
-.aali_tm_modalbox{
+.tm_modalbox{
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -1252,11 +1267,11 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_modalbox.opened{
+.tm_modalbox.opened{
 	opacity: 1;
 	visibility: visible;
 }
-.aali_tm_modalbox .box_inner{
+.tm_modalbox .box_inner{
 	position: absolute;
 	top: 70px;
 	bottom: 70px;
@@ -1276,27 +1291,27 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_modalbox.opened .box_inner{
+.tm_modalbox.opened .box_inner{
 	opacity: 1;
 	visibility: visible;
 	margin-top: 0px;
 }
-.aali_tm_modalbox .close{
+.tm_modalbox .close{
 	position: fixed;
 	left: 100%;
 	top: 0px;
 	margin-left: 20px;
 	z-index: 111111;
 }
-.aali_tm_modalbox .close a{
+.tm_modalbox .close a{
 	text-decoration: none;
 	color: #fff;
 }
-.aali_tm_modalbox .close .svg{
+.tm_modalbox .close .svg{
 	width: 50px;
 	height: 50px;
 }
-.aali_tm_modalbox .description_wrap{
+.tm_modalbox .description_wrap{
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -1305,48 +1320,48 @@ h6 { font-size: 16px; }
 	padding: 50px;
 	overflow-y: scroll;
 }
-.aali_tm_modalbox .description_wrap::-webkit-scrollbar,
-.aali_tm_fixed_content .mainbar::-webkit-scrollbar{
+.tm_modalbox .description_wrap::-webkit-scrollbar,
+.tm_fixed_content .mainbar::-webkit-scrollbar{
   width: 11px;
 }
-.aali_tm_modalbox .description_wrap{
+.tm_modalbox .description_wrap{
   scrollbar-width: thin;
   scrollbar-color: #dfe2e7 #fff;
 }
-.aali_tm_modalbox .description_wrap:-webkit-scrollbar-track,
-.aali_tm_fixed_content .mainbar:-webkit-scrollbar-track{
+.tm_modalbox .description_wrap::-webkit-scrollbar-track,
+.tm_fixed_content .mainbar::-webkit-scrollbar-track {
   background: #fff;
 }
-.aali_tm_modalbox .description_wrap::-webkit-scrollbar-thumb,
-.aali_tm_fixed_content .mainbar::-webkit-scrollbar-thumb{
+.tm_modalbox .description_wrap::-webkit-scrollbar-thumb,
+.tm_fixed_content .mainbar::-webkit-scrollbar-thumb{
   background-color: #dfe2e7;
   border-radius: 10px;
   border: 3px solid #fff;
 }
-.aali_tm_portfolio .hidden_content{
+.tm_portfolio .hidden_content{
 	display: none;
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
 	z-index: -11;
 }
-.aali_tm_modalbox .popup_details{
+.tm_modalbox .popup_details{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_modalbox .popup_details .top_image{
+.tm_modalbox .popup_details .top_image{
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 37px;
 }
-.aali_tm_modalbox .popup_details .top_image img{
+.tm_modalbox .popup_details .top_image img{
 	position: relative;
 	min-width: 100%;
 	opacity: 0;
 }
-.aali_tm_modalbox .popup_details .top_image .main{
+.tm_modalbox .popup_details .top_image .main{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1357,115 +1372,115 @@ h6 { font-size: 16px; }
 	background-repeat: no-repeat;
 	border-radius: 10px;
 }
-.aali_tm_modalbox .portfolio_main_title{
+.tm_modalbox .portfolio_main_title{
 	width: 100%;
 	float: left;
 	margin-bottom: 20px;
 }
-.aali_tm_modalbox .portfolio_main_title span{
+.tm_modalbox .portfolio_main_title span{
 	display: inline-block;
 	margin-bottom: 5px;
 	font-family: "Josefin Sans";
 }
-.aali_tm_modalbox .portfolio_main_title h3{
+.tm_modalbox .portfolio_main_title h3{
 	font-weight: 700;
     font-size: 30px;
 }
-.aali_tm_modalbox .main_details{
+.tm_modalbox .main_details{
 	width: 100%;
 	height: auto;
 	clear: both;
 	display: flex;
 	margin-bottom: 60px;
 }
-.aali_tm_modalbox .main_details .textbox{
+.tm_modalbox .main_details .textbox{
 	width: 70%;
 	padding-right: 40px;
 }
-.aali_tm_modalbox .main_details .textbox p{
+.tm_modalbox .main_details .textbox p{
 	margin-bottom: 15px;
 }
-.aali_tm_modalbox .main_details .textbox p:last-child{
+.tm_modalbox .main_details .textbox p:last-child{
 	margin-bottom: 0px;
 }
 .tokyo_tm_modalbox .main_details .detailbox{
 	width: 30%;
 	padding-left: 40px;
 }
-.aali_tm_modalbox .main_details .detailbox > ul{
+.tm_modalbox .main_details .detailbox > ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_modalbox .main_details .detailbox > ul > li{
+.tm_modalbox .main_details .detailbox > ul > li{
 	margin: 0px 0px 8px 0px;
 	width: 100%;
 	float: left;
 }
-.aali_tm_modalbox .main_details .detailbox > ul > li:last-child{
+.tm_modalbox .main_details .detailbox > ul > li:last-child{
 	margin-bottom: 0px;
 }
-.aali_tm_modalbox .main_details .detailbox .first{
+.tm_modalbox .main_details .detailbox .first{
     font-weight: 700;
 	display: block;
 	color: #000;
 	font-family: "Josefin Sans";
 	margin-bottom: 3px;
 }
-.aali_tm_modalbox .main_details .detailbox span a{
+.tm_modalbox .main_details .detailbox span a{
 	text-decoration: none;
 	color: #888;
 }
-.aali_tm_modalbox .main_details .detailbox .share{
+.tm_modalbox .main_details .detailbox .share{
 	margin: 0px;
 	list-style-type: none;
 	position: relative;
 	top: 7px;
 }
-.aali_tm_modalbox .main_details .detailbox .share li{
+.tm_modalbox .main_details .detailbox .share li{
 	margin: 0px 13px 0px 0px;
 	display: inline-block;
 }
-.aali_tm_modalbox .main_details .detailbox .share li:last-child{
+.tm_modalbox .main_details .detailbox .share li:last-child{
 	margin-right: 0px;
 }
-.aali_tm_modalbox .main_details .detailbox .share li a{
+.tm_modalbox .main_details .detailbox .share li a{
 	text-decoration: none;
 	color: #000;
 }
-.aali_tm_modalbox .additional_images{
+.tm_modalbox .additional_images{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_modalbox .additional_images ul{
+.tm_modalbox .additional_images ul{
 	margin: 0px 0px 0px -30px;
 	list-style-type: none;
 }
-.aali_tm_modalbox .additional_images ul li{
+.tm_modalbox .additional_images ul li{
 	margin: 0px 0px 30px 0px;
 	float: left;
 	width: 50%;
 	padding-left: 30px;
 }
-.aali_tm_modalbox .additional_images ul li:nth-child(3n-2){
+.tm_modalbox .additional_images ul li:nth-child(3n-2){
 	width: 100%;
 }
-.aali_tm_modalbox .additional_images ul li .list_inner{
+.tm_modalbox .additional_images ul li .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	position: relative;
 }
-.aali_tm_modalbox .additional_images ul li .my_image{
+.tm_modalbox .additional_images ul li .my_image{
 	position: relative;
 }
-.aali_tm_modalbox .additional_images ul li .my_image img{
+.tm_modalbox .additional_images ul li .my_image img{
 	opacity: 0;
 	min-width: 100%;
 }
-.aali_tm_modalbox .additional_images ul li .my_image .main{
+.tm_modalbox .additional_images ul li .my_image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1476,7 +1491,7 @@ h6 { font-size: 16px; }
 	background-position: center;
 	border-radius: 10px;
 }
-.aali_tm_full_link{
+.tm_full_link{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1486,10 +1501,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	08) AALI SERVICES
+/*	08) SERVICES
 /*---------------------------------------------------*/
 
-.aali_tm_service{
+.tm_service{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1502,7 +1517,7 @@ h6 { font-size: 16px; }
 	transition: transform 5s cubic-bezier(0, 0, 0, 1) 0s;
 	display: block;
 }
-.aali_tm_service .square_right{
+.tm_service .square_right{
 	position: absolute;
 	width: 157px;
 	height: 227px;
@@ -1510,7 +1525,7 @@ h6 { font-size: 16px; }
 	top: 35px;
 	right: 0px;
 }
-.aali_tm_service .square_left{
+.tm_service .square_left{
 	position: absolute;
 	width: 415px;
 	height: 230px;
@@ -1519,25 +1534,25 @@ h6 { font-size: 16px; }
 	left: 0px;
 	z-index: -1;
 }
-.aali_tm_service .service_list{
+.tm_service .service_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_service .service_list ul{
+.tm_service .service_list ul{
 	margin: 0px 0px 0px -25px;
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 }
-.aali_tm_service .service_list ul li{
+.tm_service .service_list ul li{
 	margin: 0px 0px 25px 0px;
 	width: 50%;
 	float: left;
 	padding-left: 25px;
 }
-.aali_tm_service .service_list ul li .list_inner{
+.tm_service .service_list ul li .list_inner{
 	width: 100%;
 	height: 100%;
 	clear: both;
@@ -1548,44 +1563,44 @@ h6 { font-size: 16px; }
 	box-shadow: 13px 13px 90px rgba(131,4,4,.06);
 	padding: 60px 60px 56px 200px;
 }
-.aali_tm_service .service_list ul li.simple .list_inner{
+.tm_service .service_list ul li.simple .list_inner{
 	box-shadow: none;
 	border-radius: 0px;
 	padding: 0px 60px 0px 0px;
 	background-color: transparent;
 }
-.aali_tm_service .service_list ul li.text{
+.tm_service .service_list ul li.text{
 	text-align: center;
 	padding: 0px 100px;
 }
-.aali_tm_service .service_list .title{
+.tm_service .service_list .title{
 	width: 100%;
 	float: left;
 	margin-bottom: 12px;
 }
-.aali_tm_service .service_list .title h3{
+.tm_service .service_list .title h3{
 	font-weight: 700;
 	font-size: 36px;
 	letter-spacing: -.2px;
 	margin-bottom: 3px;
 }
-.aali_tm_service .service_list .price{
+.tm_service .service_list .price{
 	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: -.2px;
 	font-family: "Josefin Sans";
 }
-.aali_tm_service .service_list .price span{
+.tm_service .service_list .price span{
 	font-size: 30px;
 	color: #ea4343;
 }
-.aali_tm_service .service_list .icon{
+.tm_service .service_list .icon{
 	position: absolute;
 	left: 60px;
 	width: 112px;
 	height: 112px;
 }
-.aali_tm_service .service_list .icon .svg{
+.tm_service .service_list .icon .svg{
 	width: 72px;
 	height: 72px;
 	top: 23px;
@@ -1593,30 +1608,30 @@ h6 { font-size: 16px; }
 	position: absolute;
 	z-index: 2;
 }
-.aali_tm_service .service_list .icon .back{
+.tm_service .service_list .icon .back{
 	position: absolute;
 	top: 0px;
 }
-.aali_tm_service .service_list .wrapper{
+.tm_service .service_list .wrapper{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
 }
-.aali_tm_service .service_list .wrapper h3{
+.tm_service .service_list .wrapper h3{
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: -.2px;
 	margin-bottom: 35px;
 }
-.aali_tm_service .popup_service_image{
+.tm_service .popup_service_image{
 	opacity: 0;
 	visibility: hidden;
 	display: none;
 	position: absolute;
 	z-index: -111;
 }
-.aali_tm_service .service_hidden_details{
+.tm_service .service_hidden_details{
 	opacity: 0;
 	visibility: hidden;
 	display: none;
@@ -1624,24 +1639,24 @@ h6 { font-size: 16px; }
 	z-index: -111;
 }
 
-.aali_tm_modalbox .service_popup_informations{
+.tm_modalbox .service_popup_informations{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_modalbox .service_popup_informations .image{
+.tm_modalbox .service_popup_informations .image{
 	width: 100%;
 	float: left;
 	position: relative;
 	margin-bottom: 45px;
 }
-.aali_tm_modalbox .service_popup_informations .image img{
+.tm_modalbox .service_popup_informations .image img{
 	position: relative;
 	min-width: 100%;
 	opacity: 0;
 }
-.aali_tm_modalbox .service_popup_informations .image .main{
+.tm_modalbox .service_popup_informations .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1652,41 +1667,41 @@ h6 { font-size: 16px; }
 	background-position: center;
 	border-radius: 10px;
 }
-.aali_tm_modalbox .service_popup_informations .main_title{
+.tm_modalbox .service_popup_informations .main_title{
 	width: 100%;
 	float: left;
 	margin-bottom: 15px;
 }
-.aali_tm_modalbox .service_popup_informations .main_title h3{
+.tm_modalbox .service_popup_informations .main_title h3{
 	font-size: 30px;
 }
-.aali_tm_modalbox .service_popup_informations .main_title span{
+.tm_modalbox .service_popup_informations .main_title span{
 	font-weight: 700;
     font-size: 18px;
     letter-spacing: -.2px;
     font-family: "Josefin Sans";
 	color: #7d7789;
 }
-.aali_tm_modalbox .service_popup_informations .main_title span span{
+.tm_modalbox .service_popup_informations .main_title span span{
 	font-size: 30px;
     color: #ea4343;
 }
-.aali_tm_modalbox .service_popup_informations .descriptions{
+.tm_modalbox .service_popup_informations .descriptions{
 	width: 100%;
 	float: left;
 }
-.aali_tm_modalbox .service_popup_informations .descriptions p{
+.tm_modalbox .service_popup_informations .descriptions p{
 	margin-bottom: 15px;
 }
-.aali_tm_modalbox .service_popup_informations .descriptions p:last-child{
+.tm_modalbox .service_popup_informations .descriptions p:last-child{
 	margin-bottom: 0px;
 }
 
 /*---------------------------------------------------*/
-/*	09) AALI RESUME
+/*	09) RESUME
 /*---------------------------------------------------*/
 
-.aali_tm_resume{
+.tm_resume{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1694,7 +1709,7 @@ h6 { font-size: 16px; }
 	position: relative;
 	margin-bottom: 250px;
 }
-.aali_tm_resume .content{
+.tm_resume .content{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1702,31 +1717,31 @@ h6 { font-size: 16px; }
 	position: relative;
 	padding-top: 160px;
 }
-.aali_tm_resume .content_inner{
+.tm_resume .content_inner{
 	width: 75%;
 	margin-top: 85px;
 	float: left;
 }
-.aali_tm_resume .content_inner > ul{
+.tm_resume .content_inner > ul{
 	margin: 0px 0px 0px -100px;
 	list-style-type: none;
 }
-.aali_tm_resume .content_inner > ul > li{
+.tm_resume .content_inner > ul > li{
 	margin: 0px;
 	width: 50%;
 	float: left;
 	padding-left: 100px;
 }
-.aali_tm_resume .main_title{
+.tm_resume .main_title{
 	font-weight: 700;
 	letter-spacing: -.2px;
 	margin-bottom: 33px;
 }
-.aali_tm_resume .main_title span{
+.tm_resume .main_title span{
 	position: relative;
 	padding-left: 40px;
 }
-.aali_tm_resume .main_title span:before{
+.tm_resume .main_title span:before{
 	position: absolute;
 	content: "";
 	width: 30px;
@@ -1736,7 +1751,7 @@ h6 { font-size: 16px; }
 	transform: translateY(-50%);
 	left: 0px;
 }
-.aali_tm_resume .icon{
+.tm_resume .icon{
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -1745,7 +1760,7 @@ h6 { font-size: 16px; }
 	border-radius: 100%;
 	background-color: #ea4343;
 }
-.aali_tm_resume .icon .svg{
+.tm_resume .icon .svg{
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -1754,19 +1769,19 @@ h6 { font-size: 16px; }
 	transform: translate(-50%,-50%);
 	color: #fff;
 }
-.aali_tm_resume .list{
+.tm_resume .list{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_resume .list li{
+.tm_resume .list li{
 	margin: 0px 0px 40px 0px;
 	width: 100%;
 	float: left;
 }
-.aali_tm_resume .list li:last-child{
+.tm_resume .list li:last-child{
 	margin-bottom: 0px;
 }
-.aali_tm_resume .list .list_inner{
+.tm_resume .list .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1774,30 +1789,30 @@ h6 { font-size: 16px; }
 	position: relative;
 	padding-left: 65px;
 }
-.aali_tm_resume .info{
+.tm_resume .info{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
-.aali_tm_resume .info .left h3{
+.tm_resume .info .left h3{
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: -.2px;
 	margin-bottom: 3px;
 }
-.aali_tm_resume .info .left span{
+.tm_resume .info .left span{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: -.2px;
 	font-family: "Josefin Sans";
 	color: #15111e;
 }
-.aali_tm_resume .info .right span{
+.tm_resume .info .right span{
 	font-size: 15px;
 	letter-spacing: -.2px;
 }
-.aali_tm_resume .media{
+.tm_resume .media{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1805,16 +1820,16 @@ h6 { font-size: 16px; }
 	width: 300px;
 	border-radius: 50px;
 }
-.aali_tm_resume .media[data-background-style="image"] .video{display: none;}
-.aali_tm_resume .media[data-background-style="video"] .image{display: none;}
-.aali_tm_resume .media .video{
+.tm_resume .media[data-background-style="image"] .video{display: none;}
+.tm_resume .media[data-background-style="video"] .image{display: none;}
+.tm_resume .media .video{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
 }
-.aali_tm_resume .media .image{
+.tm_resume .media .image{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1824,7 +1839,7 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	background-position: center;
 }
-.aali_tm_resume .media .square{
+.tm_resume .media .square{
 	width: 125px;
 	height: 125px;
 	background-color: #ea4343;
@@ -1835,10 +1850,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	10) AALI TESTIMONIALS
+/*	10) TESTIMONIALS
 /*---------------------------------------------------*/
 
-.aali_tm_testimonials{
+.tm_testimonials{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1848,40 +1863,40 @@ h6 { font-size: 16px; }
 	background-color: #ba3c3c;
 	padding: 160px 0px 155px 0px;
 }
-.aali_tm_testimonials .left{
+.tm_testimonials .left{
 	width: 50%;
 }
-.aali_tm_testimonials .left .image{
+.tm_testimonials .left .image{
 	position: absolute;
 	max-width: 31%;
 	bottom: 0px;
 	margin-left: 150px;
 }
-.aali_tm_testimonials .right{
+.tm_testimonials .right{
 	width: 50%;
 }
-.aali_tm_testimonials .right .right_in{
+.tm_testimonials .right .right_in{
 	max-width: 660px;
 }
-.aali_tm_testimonials ul{
+.tm_testimonials ul{
 	margin: 70px 0px 0px 0px;
 	list-style-type: none;
 }
-.aali_tm_testimonials ul li{
+.tm_testimonials ul li{
 	margin: 0px;
 }
-.aali_tm_testimonials ul li .text{
+.tm_testimonials ul li .text{
 	width: 100%;
 	float: left;
 	margin-bottom: 40px;
 }
-.aali_tm_testimonials ul li .text p{
+.tm_testimonials ul li .text p{
 	font-size: 30px;
 	color: #fff;
 	font-style: italic;
 	line-height: 1.6;
 }
-.aali_tm_testimonials ul li .name{
+.tm_testimonials ul li .name{
 	width: 100%;
 	float: left;
 	position: relative;
@@ -1894,7 +1909,7 @@ h6 { font-size: 16px; }
 	     -o-transition: all .6s ease;
 	        transition: all .6s ease;
 }
-.aali_tm_testimonials ul li .name:before{
+.tm_testimonials ul li .name:before{
 	position: absolute;
 	content: "";
 	width: 36px;
@@ -1910,24 +1925,24 @@ h6 { font-size: 16px; }
 	     -o-transition: all .6s ease;
 	        transition: all .6s ease;
 }
-.aali_tm_testimonials ul li .name h3{
+.tm_testimonials ul li .name h3{
 	font-size: 21px;
 	font-weight: 700;
 	color: #fff;
 	letter-spacing: -.2px;
 }
-.aali_tm_testimonials ul li .name h3 span{
+.tm_testimonials ul li .name h3 span{
 	font-family: "Open Sans";
 	font-size: 18px;
 	font-weight: 400;
 }
-.aali_tm_testimonials .direct{
+.tm_testimonials .direct{
 	width: 100%;
 	float: left;
 	position: relative;
 	height: 40px;
 }
-.aali_tm_testimonials .direct a{
+.tm_testimonials .direct a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 25px;
@@ -1943,19 +1958,19 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_testimonials .prev_button{
+.tm_testimonials .prev_button{
 	left: 0px;
 }
-.aali_tm_testimonials .next_button{
+.tm_testimonials .next_button{
 	left: 56px;
 }
-.aali_tm_testimonials .direct a.hovered{
+.tm_testimonials .direct a.hovered{
 	transform: scale(1.6) translateY(-30%);
 }
-.aali_tm_testimonials .direct.prev .next_button{
+.tm_testimonials .direct.prev .next_button{
 	transform: translateY(-50%) translateX(30px);
 }
-.aali_tm_testimonials .border{
+.tm_testimonials .border{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1964,13 +1979,13 @@ h6 { font-size: 16px; }
 	height: 385px;
 	margin-right: -350px;
 }
-.aali_tm_testimonials .border .in{
+.tm_testimonials .border .in{
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	border: 6px solid #fff;
 }
-.aali_tm_testimonials .square{
+.tm_testimonials .square{
 	position: absolute;
 	width: 154px;
 	height: 154px;
@@ -1978,7 +1993,7 @@ h6 { font-size: 16px; }
 	bottom: -77px;
 	right: 300px;
 }
-.aali_tm_testimonials .quote{
+.tm_testimonials .quote{
 	position: absolute;
 	width: 170px;
 	height: 250px;
@@ -1986,7 +2001,7 @@ h6 { font-size: 16px; }
 	right: 95px;
 	top: -40px;
 }
-.aali_tm_testimonials .quote i{
+.tm_testimonials .quote i{
 	color: #fff;
 	font-size: 77px;
 	position: absolute;
@@ -1996,36 +2011,36 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	11) AALI NEWS
+/*	11) NEWS
 /*---------------------------------------------------*/
 
-.aali_tm_news{
+.tm_news{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding: 160px 0px 170px 0px;
 }
-.aali_tm_news .news_list{
+.tm_news .news_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	margin-top: 86px;
 }
-.aali_tm_news .news_list ul{
+.tm_news .news_list ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_news .news_list ul li{
+.tm_news .news_list ul li{
 	margin: 0px 0px 50px 0px;
 	width: 100%;
 	float: left;
 }
-.aali_tm_news .news_list ul li:last-child{
+.tm_news .news_list ul li:last-child{
 	margin-bottom: 0px;
 }
-.aali_tm_news .news_list ul li .list_inner{
+.tm_news .news_list ul li .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2033,18 +2048,18 @@ h6 { font-size: 16px; }
 	display: flex;
 	align-items: center;
 }
-.aali_tm_news .news_list ul li .image{
+.tm_news .news_list ul li .image{
 	width: 33.3333%;
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
 }
-.aali_tm_news .news_list ul li .image img{
+.tm_news .news_list ul li .image img{
 	position: relative;
 	opacity: 0;
 	min-width: 100%;
 }
-.aali_tm_news .news_list ul li .image .main{
+.tm_news .news_list ul li .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -2061,27 +2076,27 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_news .news_list ul li .image:hover .main{
+.tm_news .news_list ul li .image:hover .main{
 	transform: scale(1.1) translateZ(0);
 }
-.aali_tm_news .news_list ul li .details{
+.tm_news .news_list ul li .details{
 	width: 41.6666%;
 	padding: 0px 70px;
 }
-.aali_tm_news .news_list ul li .details .category{
+.tm_news .news_list ul li .details .category{
 	display: inline-block;
 	margin-bottom: 5px;
 }
-.aali_tm_news .news_list ul li .details .category a{
+.tm_news .news_list ul li .details .category a{
 	text-decoration: none;
 	color: #ea4343;
 	font-weight: 700;
 	font-family: "Josefin Sans";
 }
-.aali_tm_news .news_list ul li .details .title{
+.tm_news .news_list ul li .details .title{
 	margin-bottom: 13px;
 }
-.aali_tm_news .news_list ul li .details .title a{
+.tm_news .news_list ul li .details .title a{
 	display: inline-block;
 	text-decoration: none;
 	font-size: 36px;
@@ -2094,22 +2109,22 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_news .news_list ul li .details .title a:hover{
+.tm_news .news_list ul li .details .title a:hover{
 	color: #ea4343;
 }
-.aali_tm_news .news_list ul li .date{
+.tm_news .news_list ul li .date{
 	font-size: 16px;
 }
-.aali_tm_news .news_list ul li .button{
+.tm_news .news_list ul li .button{
 	width: 25%;
 	text-align: center;
 }
-.aali_tm_learn_more{
+.tm_learn_more{
 	width: 100%;
 	float: left;
 	clear: both;
 }
-.aali_tm_learn_more a{
+.tm_learn_more a{
 	text-decoration: none;
 	display: inline-block;
 	color: #15111e;
@@ -2127,33 +2142,33 @@ h6 { font-size: 16px; }
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_learn_more a:hover{
+.tm_learn_more a:hover{
 	background-color: #ea4343;
 	color: #fff;
 }
-.aali_tm_news .news_hidden_details{
+.tm_news .news_hidden_details{
 	display: none;
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
 	z-index: -11;
 }
-.aali_tm_modalbox .news_popup_informations{
+.tm_modalbox .news_popup_informations{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_modalbox .news_popup_informations .image{
+.tm_modalbox .news_popup_informations .image{
 	position: relative;
 	margin-bottom: 37px;
 }
-.aali_tm_modalbox .news_popup_informations .image img{
+.tm_modalbox .news_popup_informations .image img{
 	position: relative;
 	opacity: 0;
 	min-width: 100%;
 }
-.aali_tm_modalbox .news_popup_informations .image .main{
+.tm_modalbox .news_popup_informations .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -2164,19 +2179,19 @@ h6 { font-size: 16px; }
 	background-position: center;
 	border-radius: 10px;
 }
-.aali_tm_modalbox .news_popup_informations .details{
+.tm_modalbox .news_popup_informations .details{
 	width: 100%;
 	float: left;
 	margin-bottom: 20px;
 }
-.aali_tm_modalbox .news_popup_informations .details .title a{
+.tm_modalbox .news_popup_informations .details .title a{
 	text-decoration: none;
 	color: #15111e;
 }
-.aali_tm_modalbox .news_popup_informations .details .date{
+.tm_modalbox .news_popup_informations .details .date{
 	display: none;
 }
-.aali_tm_modalbox .news_popup_informations .details .category a{
+.tm_modalbox .news_popup_informations .details .category a{
 	text-decoration: none;
 	color: #7d7789;
 	font-size: 16px;
@@ -2184,22 +2199,22 @@ h6 { font-size: 16px; }
 	display: inline-block;
 	margin-bottom: 3px;
 }
-.aali_tm_modalbox .news_popup_informations .text{
+.tm_modalbox .news_popup_informations .text{
 	width: 100%;
 	float: left;
 }
-.aali_tm_modalbox .news_popup_informations .text p{
+.tm_modalbox .news_popup_informations .text p{
 	margin-bottom: 15px;
 }
-.aali_tm_modalbox .news_popup_informations .text p:last-child{
+.tm_modalbox .news_popup_informations .text p:last-child{
 	margin-bottom: 0px;
 }
 
 /*---------------------------------------------------*/
-/*	12) AALI COUNTER
+/*	12) COUNTER
 /*---------------------------------------------------*/
 
-.aali_tm_counter{
+.tm_counter{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2208,22 +2223,22 @@ h6 { font-size: 16px; }
 	padding: 125px 0px 107px 0px;
 	position: relative;
 }
-.aali_tm_counter .counter_list{
+.tm_counter .counter_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_counter .counter_list ul{
+.tm_counter .counter_list ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_counter .counter_list ul li{
+.tm_counter .counter_list ul li{
 	margin: 0px;
 	width: 33.3333%;
 	float: left;
 }
-.aali_tm_counter .counter_list .list_inner{
+.tm_counter .counter_list .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2231,44 +2246,44 @@ h6 { font-size: 16px; }
 	position: relative;
 	padding: 0px 20px;
 }
-.aali_tm_counter .counter_list .value span{
+.tm_counter .counter_list .value span{
 	font-family: "Josefin Sans";
 	font-size: 72px;
 	color: #f4f5fe;
 	font-weight: 700;
 	position: relative;
 }
-.aali_tm_counter .counter_list .value .big{
+.tm_counter .counter_list .value .big{
 	font-family: "Josefin Sans";
 	font-size: 72px;
 	color: #f4f5fe;
 	font-weight: 700;
 }
-.aali_tm_counter .counter_list .value .small{
+.tm_counter .counter_list .value .small{
 	font-size: 36px;
 	color: #f4f5fe;
 	position: absolute;
 	top: -18px;
 	left: 100%;
 }
-.aali_tm_counter .counter_list .wrapper{
+.tm_counter .counter_list .wrapper{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.aali_tm_counter .counter_list .wrapper .text{
+.tm_counter .counter_list .wrapper .text{
 	padding-left: 40px;
 	position: relative;
 	top: -8px;
 }
-.aali_tm_counter .counter_list .wrapper .text h3{
+.tm_counter .counter_list .wrapper .text h3{
 	font-size: 30px;
 	font-weight: 600;
 	color: #f4f5fe;
 	letter-spacing: -.2px;
 	line-height: 1.4;
 }
-.aali_tm_counter .border{
+.tm_counter .border{
 	position: absolute;
 	right: 0px;
 	width: 1000pc;
@@ -2280,10 +2295,10 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	13) AALI CONTACT
+/*	13) CONTACT
 /*---------------------------------------------------*/
 
-.aali_tm_contact{
+.tm_contact{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2291,7 +2306,7 @@ h6 { font-size: 16px; }
 	padding: 150px 0px 170px 0px;
 	position: relative;
 }
-.aali_tm_contact .contact_inner{
+.tm_contact .contact_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2299,27 +2314,27 @@ h6 { font-size: 16px; }
 	display: flex;
 	margin-top: 60px;
 }
-.aali_tm_contact .left{
+.tm_contact .left{
 	width: 50%;
 	padding-right: 50px;
 }
-.aali_tm_contact .left .text{
+.tm_contact .left .text{
 	max-width: 450px;
 	margin-bottom: 38px;
 }
-.aali_tm_contact .left ul{
+.tm_contact .left ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_contact .left ul li{
+.tm_contact .left ul li{
 	margin: 0px 0px 25px 0px;
 	width: 100%;
 	float: left;
 }
-.aali_tm_contact .left ul li:last-child{
+.tm_contact .left ul li:last-child{
 	margin-bottom: 0px;
 }
-.aali_tm_contact .left ul li .list_inner{
+.tm_contact .left ul li .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2327,7 +2342,7 @@ h6 { font-size: 16px; }
 	position: relative;
 	padding-left: 75px;
 }
-.aali_tm_contact .left ul li .svg{
+.tm_contact .left ul li .svg{
 	position: absolute;
 	left: 0px;
 	top: 50%;
@@ -2336,48 +2351,48 @@ h6 { font-size: 16px; }
 	height: 50px;
 	color: #33303a;
 }
-.aali_tm_contact .left ul li span{
+.tm_contact .left ul li span{
 	font-family: "Josefin Sans";
 	font-size: 18px;
 	font-weight: 700;
 	color: #15111e;
 	letter-spacing: -.2px;
 }
-.aali_tm_contact .left ul li h3{
+.tm_contact .left ul li h3{
 	font-size: 30px;
 	font-weight: 700;
 	color: #ea4343;
 	letter-spacing: -.2px;
 }
-.aali_tm_contact .left ul li a{
+.tm_contact .left ul li a{
 	text-decoration: none;
 	color: #ea4343;
 }
-.aali_tm_contact .right{
+.tm_contact .right{
 	width: 50%;
 }
-.aali_tm_contact .right .fields{
+.tm_contact .right .fields{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_contact .right .input_list{
+.tm_contact .right .input_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.aali_tm_contact .right .input_list ul{
+.tm_contact .right .input_list ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_contact .right .input_list ul li{
+.tm_contact .right .input_list ul li{
 	margin: 0px 0px 18px 0px;
 	float: left;
 	width: 100%;
 }
-.aali_tm_contact .right .input_list ul li input{
+.tm_contact .right .input_list ul li input{
 	width: 100%;
 	height: 60px;
 	border-radius: 10px;
@@ -2390,7 +2405,7 @@ h6 { font-size: 16px; }
 	color: #aaa6b2;
 	letter-spacing: 0px;
 }
-.aali_tm_contact .right .input_list ul li input:focus{
+.tm_contact .right .input_list ul li input:focus{
 	outline: none;
 }
 input::-webkit-outer-spin-button,
@@ -2403,12 +2418,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
-.aali_tm_contact .message_area{
+.tm_contact .message_area{
 	width: 100%;
 	float: left;
 	margin-bottom: 10px;
 }
-.aali_tm_contact .message_area textarea{
+.tm_contact .message_area textarea{
 	width: 100%;
 	height: 230px;
 	border-radius: 10px;
@@ -2422,28 +2437,28 @@ input[type=number] {
 	color: #aaa6b2;
 	letter-spacing: 0px;
 }
-.aali_tm_contact .message_area textarea:focus{
+.tm_contact .message_area textarea:focus{
 	outline: none;
 }
-.aali_tm_contact .empty_notice{
+.tm_contact .empty_notice{
 	color: #F52225;
 	margin-bottom: 7px;
 	display: none;
 	text-align: left;
 	font-weight: 500;
 }
-.aali_tm_contact .contact_error{
+.tm_contact .contact_error{
 	color: #F52225;
 	text-align: left;
 	font-weight: 500;
 }
-.aali_tm_contact .returnmessage{
+.tm_contact .returnmessage{
 	color:#3A00FF;
 	margin-bottom: 7px;
 	text-align: left;
 	font-weight: 500;
 }
-.aali_tm_contact .square{
+.tm_contact .square{
 	position: absolute;
 	width: 115px;
 	height: 90px;
@@ -2453,10 +2468,10 @@ input[type=number] {
 }
 
 /*---------------------------------------------------*/
-/*	14) AALI COPYRIGHT
+/*	14) COPYRIGHT
 /*---------------------------------------------------*/
 
-.aali_tm_copyright{
+.tm_copyright{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -2465,14 +2480,14 @@ input[type=number] {
 	padding: 120px 0px 65px 0px;
 	position: relative;
 }
-.aali_tm_copyright .copyright_inner{
+.tm_copyright .copyright_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	position: relative;
 }
-.aali_tm_copyright .top{
+.tm_copyright .top{
 	width: 100%;
 	float: left;
 	display: flex;
@@ -2480,25 +2495,25 @@ input[type=number] {
 	justify-content: space-between;
 	margin-bottom: 112px;
 }
-.aali_tm_copyright .logo img{
+.tm_copyright .logo img{
 	max-width: 175px;
 }
-.aali_tm_copyright .social{
+.tm_copyright .social{
 	display: flex;
 	align-items: center;
 }
-.aali_tm_copyright .social ul{
+.tm_copyright .social ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_copyright .social ul li{
+.tm_copyright .social ul li{
 	margin: 0px 7px 0px 0px;
 	display: inline-block;
 }
-.aali_tm_copyright .social ul li:last-child{
+.tm_copyright .social ul li:last-child{
 	margin-right: 0px;
 }
-.aali_tm_copyright .social ul li a{
+.tm_copyright .social ul li a{
 	display: inline-block;
 	width: 48px;
 	height: 48px;
@@ -2514,11 +2529,11 @@ input[type=number] {
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_copyright .social ul li a:hover{
+.tm_copyright .social ul li a:hover{
 	background-color: #ea4343;
 	color: #fff;
 }
-.aali_tm_copyright .social span{
+.tm_copyright .social span{
 	padding-right: 30px;
 	font-family: "Josefin Sans";
 	font-weight: 700;
@@ -2527,17 +2542,17 @@ input[type=number] {
 	position: relative;
 	top: 3px;
 }
-.aali_tm_copyright .bottom{
+.tm_copyright .bottom{
 	width: 100%;
 	float: left;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.aali_tm_copyright .bottom .left p{
+.tm_copyright .bottom .left p{
 	color: #b6b2bf;
 }
-.aali_tm_copyright .bottom .left a{
+.tm_copyright .bottom .left a{
 	color: #b6b2bf;
 	text-decoration: none;
 	font-weight: 700;
@@ -2548,21 +2563,21 @@ input[type=number] {
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_copyright .bottom .left a:hover{
+.tm_copyright .bottom .left a:hover{
 	color: #fff;
 }
-.aali_tm_copyright .bottom .right ul{
+.tm_copyright .bottom .right ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aali_tm_copyright .bottom .right ul li{
+.tm_copyright .bottom .right ul li{
 	margin: 0px 40px 0px 0px;
 	display: inline-block;
 }
-.aali_tm_copyright .bottom .right ul li:last-child{
+.tm_copyright .bottom .right ul li:last-child{
 	margin-right: 0px;
 }
-.aali_tm_copyright .bottom .right ul li a{
+.tm_copyright .bottom .right ul li a{
 	text-decoration: none;
 	color: #b6b2bf;
 	
@@ -2572,10 +2587,10 @@ input[type=number] {
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aali_tm_copyright .bottom .right ul li a:hover{
+.tm_copyright .bottom .right ul li a:hover{
 	color: #fff;
 }
-.aali_tm_copyright .border{
+.tm_copyright .border{
 	position: absolute;
 	width: 320px;
 	height: 300px;
@@ -2583,7 +2598,7 @@ input[type=number] {
 	top: -200px;
 	left: -45px;
 }
-.aali_tm_copyright .square{
+.tm_copyright .square{
 	position: absolute;
 	width: 84px;
 	height: 143px;
@@ -2591,7 +2606,7 @@ input[type=number] {
 	right: 60px;
 	background-color: #ea4343;
 }
-.aali_tm_copyright .square a{
+.tm_copyright .square a{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -2690,7 +2705,7 @@ input[type=number] {
 .cursor-outer.cursor-hover{
   opacity: 0;
 }
-.aali_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor{
+.tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor{
 	display: none;
 	opacity: 0;
 	visibility: hidden;
@@ -2699,191 +2714,191 @@ input[type=number] {
 }
 
 /*---------------------------------------------------*/
-/*	16) AALI MEDIA QUERIES (FOR SMALL DEVICES)
+/*	16) MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1400px) {
 	body{font-size: 16px;}
 	.container{max-width: 1070px;}
-	.aali_tm_header .logo img{max-width: 75px;}
-	.aali_tm_header .menu ul li{margin-right: 30px;}
-	.aali_tm_header .inner{padding: 20px 0px;}
-	.aali_tm_header.animate .inner{padding: 15px 0px;}
-	.aali_tm_hero .content .hello{font-size: 20px;margin-bottom: 10px;}
-	.aali_tm_hero .content .name{font-size: 80px;}
-	.aali_tm_hero .cd-headline{font-size: 25px;}
-	.aali_tm_hero .cd-headline b{font-size: 35px;}
-	.aali_tm_button a{padding: 10px 62px 9px 35px}
-	.aali_tm_hero .simple_button{margin-left: 28px;}
-	.aali_tm_hero .hero_buttons{margin-top: 25px;margin-bottom: 45px;}
-	.aali_tm_button a .svg{width: 16px;height: 16px;}
-	.aali_tm_hero .socials{left: 30px;}
-	.aali_tm_hero .socials ul .svg{width: 16px;height: 16px;}
-	.aali_tm_hero .socials ul li{margin-bottom: 10px;}
-	.aali_tm_hero .hero_mail{left: 30px;bottom: 20px;}
-	.aali_tm_hero .hero_mail a{font-size: 18px;}
-	.aali_tm_hero .avatar{width: 33%;}
-	.aali_tm_hero .avatar .two{width: 170px;height: 170px;bottom: 60px;}
-	.aali_tm_hero .avatar .three{width: 60px;height: 90px;top: 150px;left: -85px;}
-	.aali_tm_hero .avatar .one{width: 250px;top: 100px;bottom: 100px;}
-	.aali_tm_hero .avatar .four{width: 285px;height: 305px;}
-	.aali_tm_hero .five{width: 35px;height: 50px;right: -135px;}
-	.aali_tm_hero .stroke_text{font-size: 200px;right: -125px;margin-top: -44px;}
-	.aali_tm_about .center .small{font-size: 18px;}
-	.aali_tm_about .center h3{font-size: 40px;}
-	.aali_tm_about .center .subtitle{font-size: 25px;margin-top: 10px;}
-	.aali_tm_about .text p{margin-bottom: 20px;}
-	.aali_tm_about .center .title{margin-bottom: 23px;}
-	.aali_tm_about .border{height: 200px;margin-right: -30px;}
-	.aali_tm_about .square{width: 200px;height: 200px;}
-	.aali_tm_about .left .image{margin-left: 120px;}
-	.aali_tm_about .right .square{height: 260px;margin-left: -80px;top: -60px;}
-	.aali_tm_about .right{top: 240px;}
-	.aali_tm_about .center{padding: 0px 50px 0px 80px;}
-	.aali_tm_main_title{max-width: 500px;}
-	.aali_tm_main_title span{font-size: 18px;}
-	.aali_tm_main_title h3{font-size: 40px;}
+	.tm_header .logo img{max-width: 75px;}
+	.tm_header .menu ul li{margin-right: 30px;}
+	.tm_header .inner{padding: 20px 0px;}
+	.tm_header.animate .inner{padding: 15px 0px;}
+	.tm_hero .content .hello{font-size: 20px;margin-bottom: 10px;}
+	.tm_hero .content .name{font-size: 80px;}
+	.tm_hero .cd-headline{font-size: 25px;}
+	.tm_hero .cd-headline b{font-size: 35px;}
+	.tm_button a{padding: 10px 62px 9px 35px}
+	.tm_hero .simple_button{margin-left: 28px;}
+	.tm_hero .hero_buttons{margin-top: 25px;margin-bottom: 45px;}
+	.tm_button a .svg{width: 16px;height: 16px;}
+	.tm_hero .socials{left: 30px;}
+	.tm_hero .socials ul .svg{width: 16px;height: 16px;}
+	.tm_hero .socials ul li{margin-bottom: 10px;}
+	.tm_hero .hero_mail{left: 30px;bottom: 20px;}
+	.tm_hero .hero_mail a{font-size: 18px;}
+	.tm_hero .avatar{width: 33%;}
+	.tm_hero .avatar .two{width: 170px;height: 170px;bottom: 60px;}
+	.tm_hero .avatar .three{width: 60px;height: 90px;top: 150px;left: -85px;}
+	.tm_hero .avatar .one{width: 250px;top: 100px;bottom: 100px;}
+	.tm_hero .avatar .four{width: 285px;height: 305px;}
+	.tm_hero .five{width: 35px;height: 50px;right: -135px;}
+	.tm_hero .stroke_text{font-size: 200px;right: -125px;margin-top: -44px;}
+	.tm_about .center .small{font-size: 18px;}
+	.tm_about .center h3{font-size: 40px;}
+	.tm_about .center .subtitle{font-size: 25px;margin-top: 10px;}
+	.tm_about .text p{margin-bottom: 20px;}
+	.tm_about .center .title{margin-bottom: 23px;}
+	.tm_about .border{height: 200px;margin-right: -30px;}
+	.tm_about .square{width: 200px;height: 200px;}
+	.tm_about .left .image{margin-left: 120px;}
+	.tm_about .right .square{height: 260px;margin-left: -80px;top: -60px;}
+	.tm_about .right{top: 240px;}
+	.tm_about .center{padding: 0px 50px 0px 80px;}
+	.tm_main_title{max-width: 500px;}
+	.tm_main_title span{font-size: 18px;}
+	.tm_main_title h3{font-size: 40px;}
 	.progress_inner > span{font-size: 19px;}
 	.progress_inner > span{margin-bottom: 8px;}
-	.aali_tm_portfolio .portfolio_filter{padding-bottom: 40px;}
-	.aali_tm_portfolio .portfolio_filter ul li{margin-right: 30px;}
-	.aali_tm_portfolio .portfolio_list .svg{width: 42px;height: 42px;}
-	.aali_tm_skills .border{bottom: -167px;margin-right: -210px;}
-	.aali_tm_service .square_right{width: 110px;height: 170px;}
-	.aali_tm_service .service_list .title h3{font-size: 25px;margin-bottom: 0px;}
-	.aali_tm_service .service_list .price{font-size: 16px;}
-	.aali_tm_service .service_list .price span{font-size: 25px;}
-	.aali_tm_service .service_list .icon{left: 30px;}
-	.aali_tm_service .service_list .icon .back{max-width: 70%;}
-	.aali_tm_service .service_list .icon .svg{width: 40px;height: 40px;top: 16px;left: 22px;}
-	.aali_tm_service .service_list ul li .list_inner{padding: 50px 30px 50px 130px;}
-	.aali_tm_service .service_list .wrapper h3{font-size: 25px;margin-bottom: 25px;}
-	.aali_tm_resume .main_title{font-size: 25px;}
-	.aali_tm_resume .info .left h3{font-size: 19px;margin-bottom: 0px;}
-	.aali_tm_resume .info .left span{font-size: 16px;}
-	.aali_tm_resume .info .right span{font-size: 14px;}
-	.aali_tm_resume .content_inner > ul > li{padding-left: 60px;}
-	.aali_tm_resume .content_inner > ul{margin-left: -60px;}
-	.aali_tm_resume .icon{width: 40px;height: 40px;}
-	.aali_tm_resume .icon .svg{width: 18px;height: 18px;}
-	.aali_tm_service .square_left{width: 270px;height: 190px;bottom: 60px;}
-	.aali_tm_resume .media .square{width: 100px;height: 100px;}
-	.aali_tm_testimonials ul li .text p{font-size: 23px;}
-	.aali_tm_testimonials ul li .text{font-size: 30px;}
-	.aali_tm_testimonials ul{margin-top: 60px;}
-	.aali_tm_testimonials{padding: 140px 0px 135px 0px;}
-	.aali_tm_testimonials .left .image{margin-left: 90px;max-width: 35%;}
-	.aali_tm_testimonials .border{height: 350px;margin-right: -250px;}
-	.aali_tm_testimonials .quote i{font-size: 60px;}
-	.aali_tm_testimonials .quote{width: 150px;height: 210px;}
-	.aali_tm_testimonials .square{bottom: -60px;width: 130px;height: 130px;}
-	.aali_tm_news .news_list ul li .details .title a{font-size: 25px;}
-	.aali_tm_news .news_list ul li .details .title{margin-bottom: 8px;}
-	.aali_tm_learn_more a{padding: 10px 35px;}
-	.aali_tm_counter .counter_list .value span{font-size: 60px;}
-	.aali_tm_counter .counter_list .value .big{font-size: 60px;}
-	.aali_tm_counter .counter_list .wrapper .text h3{font-size: 25px;}
-	.aali_tm_counter .border{margin-left: -60px;}
-	.aali_tm_contact .square{width: 100px;height: 80px;}
-	.aali_tm_contact .left ul li h3{font-size: 25px;}
-	.aali_tm_copyright .square{width: 70px;height: 130px;top: -65px;right: 20px;}
-	.aali_tm_modalbox .box_inner{width: 800px;}
+	.tm_portfolio .portfolio_filter{padding-bottom: 40px;}
+	.tm_portfolio .portfolio_filter ul li{margin-right: 30px;}
+	.tm_portfolio .portfolio_list .svg{width: 42px;height: 42px;}
+	.tm_skills .border{bottom: -167px;margin-right: -210px;}
+	.tm_service .square_right{width: 110px;height: 170px;}
+	.tm_service .service_list .title h3{font-size: 25px;margin-bottom: 0px;}
+	.tm_service .service_list .price{font-size: 16px;}
+	.tm_service .service_list .price span{font-size: 25px;}
+	.tm_service .service_list .icon{left: 30px;}
+	.tm_service .service_list .icon .back{max-width: 70%;}
+	.tm_service .service_list .icon .svg{width: 40px;height: 40px;top: 16px;left: 22px;}
+	.tm_service .service_list ul li .list_inner{padding: 50px 30px 50px 130px;}
+	.tm_service .service_list .wrapper h3{font-size: 25px;margin-bottom: 25px;}
+	.tm_resume .main_title{font-size: 25px;}
+	.tm_resume .info .left h3{font-size: 19px;margin-bottom: 0px;}
+	.tm_resume .info .left span{font-size: 16px;}
+	.tm_resume .info .right span{font-size: 14px;}
+	.tm_resume .content_inner > ul > li{padding-left: 60px;}
+	.tm_resume .content_inner > ul{margin-left: -60px;}
+	.tm_resume .icon{width: 40px;height: 40px;}
+	.tm_resume .icon .svg{width: 18px;height: 18px;}
+	.tm_service .square_left{width: 270px;height: 190px;bottom: 60px;}
+	.tm_resume .media .square{width: 100px;height: 100px;}
+	.tm_testimonials ul li .text p{font-size: 23px;}
+	.tm_testimonials ul li .text{font-size: 30px;}
+	.tm_testimonials ul{margin-top: 60px;}
+	.tm_testimonials{padding: 140px 0px 135px 0px;}
+	.tm_testimonials .left .image{margin-left: 90px;max-width: 35%;}
+	.tm_testimonials .border{height: 350px;margin-right: -250px;}
+	.tm_testimonials .quote i{font-size: 60px;}
+	.tm_testimonials .quote{width: 150px;height: 210px;}
+	.tm_testimonials .square{bottom: -60px;width: 130px;height: 130px;}
+	.tm_news .news_list ul li .details .title a{font-size: 25px;}
+	.tm_news .news_list ul li .details .title{margin-bottom: 8px;}
+	.tm_learn_more a{padding: 10px 35px;}
+	.tm_counter .counter_list .value span{font-size: 60px;}
+	.tm_counter .counter_list .value .big{font-size: 60px;}
+	.tm_counter .counter_list .wrapper .text h3{font-size: 25px;}
+	.tm_counter .border{margin-left: -60px;}
+	.tm_contact .square{width: 100px;height: 80px;}
+	.tm_contact .left ul li h3{font-size: 25px;}
+	.tm_copyright .square{width: 70px;height: 130px;top: -65px;right: 20px;}
+	.tm_modalbox .box_inner{width: 800px;}
 }
 @media (max-width: 1040px) {
 	.container{padding: 0px 20px;}
-	.aali_tm_header{display: none;}
-	.aali_tm_mobile_menu{display: block;}
-	.aali_tm_hero .avatar .one{display: none;}
-	.aali_tm_hero .avatar .two{display: none;}
-	.aali_tm_hero .avatar .three{display: none;}
-	.aali_tm_hero .avatar .four{display: none;}
-	.aali_tm_hero .avatar .five{display: none;}
-	.aali_tm_hero .stroke_text{display: none;}
-	.aali_tm_hero .socials{display: none;}
-	.aali_tm_hero .content{width: 100%;}
-	.aali_tm_hero .avatar{display: none;}
-	.aali_tm_about .left{display: none;}
-	.aali_tm_about .right{display: none;}
-	.aali_tm_about .about_inner{display: block;}
-	.aali_tm_about .center{width: 100%;padding: 0px 20px;}
-	.aali_tm_skills .skills_inner{flex-direction: column;align-items: baseline;}
-	.aali_tm_skills .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
-	.aali_tm_skills .right{width: 100%;padding-left: 0px;}
-	.aali_tm_main_title h3{font-size: 30px;}
-	.aali_tm_main_title{max-width: 100%;}
-	.aali_tm_skills .border{display: none;}
-	.aali_tm_portfolio .portfolio_list ul li{width: 50%;}
-	.aali_tm_service .square_right{display: none;}
-	.aali_tm_service .service_list ul{margin: 0px;}
-	.aali_tm_service .service_list ul li{width: 100%;padding-left: 0px;}
-	.aali_tm_service .service_list ul li.text{text-align: left;padding: 0px;}
-	.aali_tm_service .service_list .wrapper{position: static;top: 0px;transform: translateY(0);}
-	.aali_tm_service .square_left{display: none;}
-	.aali_tm_resume .media{display: none;}
-	.aali_tm_resume .content_inner{width: 100%;}
-	.aali_tm_testimonials .quote{display: none;}
-	.aali_tm_testimonials .square{display: none;}
-	.aali_tm_testimonials .border{display: none;}
-	.aali_tm_testimonials .left{display: none;}
-	.aali_tm_testimonials .right{width: 100%;padding: 0px 20px;}
-	.aali_tm_counter .border{display: none;}
-	.aali_tm_contact .square{display: none;}
-	.aali_tm_contact .contact_inner{flex-direction: column;align-items: baseline;}
-	.aali_tm_contact .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
-	.aali_tm_contact .right{width: 100%;padding-left: 0px;}
-	.aali_tm_copyright .square{display: none;}
-	.aali_tm_copyright .border{display: none;}
-	.aali_tm_copyright .top{flex-direction: column;align-items: baseline;margin-bottom: 50px;}
-	.aali_tm_copyright .top .logo{margin-bottom: 30px;}
-	.aali_tm_copyright .bottom{flex-direction: column;align-items: baseline;}
-	.aali_tm_copyright .bottom .left{margin-bottom: 20px;}
-	.aali_tm_modalbox .box_inner{width: 500px;}
+	.tm_header{display: none;}
+	.tm_mobile_menu{display: block;}
+	.tm_hero .avatar .one{display: none;}
+	.tm_hero .avatar .two{display: none;}
+	.tm_hero .avatar .three{display: none;}
+	.tm_hero .avatar .four{display: none;}
+	.tm_hero .avatar .five{display: none;}
+	.tm_hero .stroke_text{display: none;}
+	.tm_hero .socials{display: none;}
+	.tm_hero .content{width: 100%;}
+	.tm_hero .avatar{display: none;}
+	.tm_about .left{display: none;}
+	.tm_about .right{display: none;}
+	.tm_about .about_inner{display: block;}
+	.tm_about .center{width: 100%;padding: 0px 20px;}
+	.tm_skills .skills_inner{flex-direction: column;align-items: baseline;}
+	.tm_skills .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
+	.tm_skills .right{width: 100%;padding-left: 0px;}
+	.tm_main_title h3{font-size: 30px;}
+	.tm_main_title{max-width: 100%;}
+	.tm_skills .border{display: none;}
+	.tm_portfolio .portfolio_list ul li{width: 50%;}
+	.tm_service .square_right{display: none;}
+	.tm_service .service_list ul{margin: 0px;}
+	.tm_service .service_list ul li{width: 100%;padding-left: 0px;}
+	.tm_service .service_list ul li.text{text-align: left;padding: 0px;}
+	.tm_service .service_list .wrapper{position: static;top: 0px;transform: translateY(0);}
+	.tm_service .square_left{display: none;}
+	.tm_resume .media{display: none;}
+	.tm_resume .content_inner{width: 100%;}
+	.tm_testimonials .quote{display: none;}
+	.tm_testimonials .square{display: none;}
+	.tm_testimonials .border{display: none;}
+	.tm_testimonials .left{display: none;}
+	.tm_testimonials .right{width: 100%;padding: 0px 20px;}
+	.tm_counter .border{display: none;}
+	.tm_contact .square{display: none;}
+	.tm_contact .contact_inner{flex-direction: column;align-items: baseline;}
+	.tm_contact .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
+	.tm_contact .right{width: 100%;padding-left: 0px;}
+	.tm_copyright .square{display: none;}
+	.tm_copyright .border{display: none;}
+	.tm_copyright .top{flex-direction: column;align-items: baseline;margin-bottom: 50px;}
+	.tm_copyright .top .logo{margin-bottom: 30px;}
+	.tm_copyright .bottom{flex-direction: column;align-items: baseline;}
+	.tm_copyright .bottom .left{margin-bottom: 20px;}
+	.tm_modalbox .box_inner{width: 500px;}
 }
 @media (max-width: 768px) {
-	.aali_tm_hero .content .name{font-size: 60px;}
-	.aali_tm_hero .cd-headline{font-size: 20px;}
-	.aali_tm_hero .cd-headline b{font-size: 30px;}
-	.aali_tm_hero .simple_button{margin-left: 20px;}
-	.aali_tm_about{padding: 135px 0px;}
-	.aali_tm_about .center h3{font-size: 30px;}
-	.aali_tm_about .center .subtitle{font-size: 20px;}
-	.aali_tm_skills{padding-top: 130px;padding-bottom: 527px;}
-	.aali_tm_portfolio .portfolio_list ul{margin: 0px;}
-	.aali_tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
-	.aali_tm_portfolio .portfolio_list .svg{width: 30px;height: 30px;}
-	.aali_tm_portfolio .portfolio_list .details h3{font-size: 18px;}
-	.aali_tm_portfolio .portfolio_filter{text-align: left;}
-	.aali_tm_service .service_list .icon{display: inline-block;position: relative;top: 0px;left: 0px;width: 110px;height: 90px;}
-	.aali_tm_service{padding: 100px 0px 0px 0px;}
-	.aali_tm_service .service_list ul li .list_inner{padding: 50px 30px;}
-	.aali_tm_service .service_list .title h3{font-size: 22px;}
-	.aali_tm_service .service_list .wrapper h3{font-size: 22px;}
-	.aali_tm_resume{margin-bottom: 130px;}
-	.aali_tm_resume .content{padding-top: 105px;}
-	.aali_tm_resume .content_inner > ul{margin: 0px;}
-	.aali_tm_resume .content_inner > ul > li{width: 100%;padding-left: 0px;}
-	.aali_tm_resume .content_inner > ul > li{margin-bottom: 50px;}
-	.aali_tm_resume .content_inner > ul > li:last-child{margin-bottom: 0px;}
-	.aali_tm_resume .icon{display: inline-block;position: relative;top: 0px;left: 0px;margin-bottom: 10px;}
-	.aali_tm_resume .info{flex-direction: column;align-items: baseline;}
-	.aali_tm_resume .list .list_inner{padding-left: 0px;}
-	.aali_tm_testimonials ul li .text p{font-size: 19px;}
-	.aali_tm_news{padding-top: 130px;padding-bottom: 135px;}
-	.aali_tm_news .news_list ul li .list_inner{flex-direction: column;align-items: baseline;}
-	.aali_tm_news .news_list ul li .image{width:100%;margin-bottom: 20px;}
-	.aali_tm_news .news_list ul li .details{width:100%;padding: 0px;margin-bottom: 20px;}
-	.aali_tm_news .news_list ul li .button{width: 100%;text-align: left;}
-	.aali_tm_news .news_list ul li .details .title a{font-size: 22px;}
-	.aali_tm_news .news_list ul li .details .title{margin-bottom: 2px;}
-	.aali_tm_counter .counter_list ul li{width: 100%;}
-	.aali_tm_counter .counter_list .value span{font-size: 50px;}
-	.aali_tm_counter .counter_list .value .big{font-size: 50px;}
-	.aali_tm_counter .counter_list .wrapper .text h3{font-size: 20px;}
-	.aali_tm_contact{padding-top: 130px;padding-bottom: 135px;}
-	.aali_tm_modalbox .box_inner{width: 300px;}
-	.aali_tm_modalbox .close .svg{width: 30px;height: 30px;}
-	.aali_tm_modalbox .close{margin-left: -30px;top: -40px;}
-	.aali_tm_modalbox .description_wrap{padding: 30px;}
-	.aali_tm_modalbox .news_popup_informations .details .title{font-size: 22px;}
-	.aali_tm_modalbox .service_popup_informations .main_title h3{font-size: 22px;}
+	.tm_hero .content .name{font-size: 60px;}
+	.tm_hero .cd-headline{font-size: 20px;}
+	.tm_hero .cd-headline b{font-size: 30px;}
+	.tm_hero .simple_button{margin-left: 20px;}
+	.tm_about{padding: 135px 0px;}
+	.tm_about .center h3{font-size: 30px;}
+	.tm_about .center .subtitle{font-size: 20px;}
+	.tm_skills{padding-top: 130px;padding-bottom: 527px;}
+	.tm_portfolio .portfolio_list ul{margin: 0px;}
+	.tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
+	.tm_portfolio .portfolio_list .svg{width: 30px;height: 30px;}
+	.tm_portfolio .portfolio_list .details h3{font-size: 18px;}
+	.tm_portfolio .portfolio_filter{text-align: left;}
+	.tm_service .service_list .icon{display: inline-block;position: relative;top: 0px;left: 0px;width: 110px;height: 90px;}
+	.tm_service{padding: 100px 0px 0px 0px;}
+	.tm_service .service_list ul li .list_inner{padding: 50px 30px;}
+	.tm_service .service_list .title h3{font-size: 22px;}
+	.tm_service .service_list .wrapper h3{font-size: 22px;}
+	.tm_resume{margin-bottom: 130px;}
+	.tm_resume .content{padding-top: 105px;}
+	.tm_resume .content_inner > ul{margin: 0px;}
+	.tm_resume .content_inner > ul > li{width: 100%;padding-left: 0px;}
+	.tm_resume .content_inner > ul > li{margin-bottom: 50px;}
+	.tm_resume .content_inner > ul > li:last-child{margin-bottom: 0px;}
+	.tm_resume .icon{display: inline-block;position: relative;top: 0px;left: 0px;margin-bottom: 10px;}
+	.tm_resume .info{flex-direction: column;align-items: baseline;}
+	.tm_resume .list .list_inner{padding-left: 0px;}
+	.tm_testimonials ul li .text p{font-size: 19px;}
+	.tm_news{padding-top: 130px;padding-bottom: 135px;}
+	.tm_news .news_list ul li .list_inner{flex-direction: column;align-items: baseline;}
+	.tm_news .news_list ul li .image{width:100%;margin-bottom: 20px;}
+	.tm_news .news_list ul li .details{width:100%;padding: 0px;margin-bottom: 20px;}
+	.tm_news .news_list ul li .button{width: 100%;text-align: left;}
+	.tm_news .news_list ul li .details .title a{font-size: 22px;}
+	.tm_news .news_list ul li .details .title{margin-bottom: 2px;}
+	.tm_counter .counter_list ul li{width: 100%;}
+	.tm_counter .counter_list .value span{font-size: 50px;}
+	.tm_counter .counter_list .value .big{font-size: 50px;}
+	.tm_counter .counter_list .wrapper .text h3{font-size: 20px;}
+	.tm_contact{padding-top: 130px;padding-bottom: 135px;}
+	.tm_modalbox .box_inner{width: 300px;}
+	.tm_modalbox .close .svg{width: 30px;height: 30px;}
+	.tm_modalbox .close{margin-left: -30px;top: -40px;}
+	.tm_modalbox .description_wrap{padding: 30px;}
+	.tm_modalbox .news_popup_informations .details .title{font-size: 22px;}
+	.tm_modalbox .service_popup_informations .main_title h3{font-size: 22px;}
 }
